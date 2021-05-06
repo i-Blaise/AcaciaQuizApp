@@ -12,6 +12,7 @@
 <body>
     <div id="svg_wrap"></div>
 
+    <form action="hi.html" method="POST">
    <section>
      <h2 class="quiz_h2">When taking snacks, I’ll prefer…</h2>
      <p class="quiz_p">Let's get to know you a little better.</p>
@@ -181,14 +182,19 @@
        <label for="">Processed biscuits, sweets, shawarma, chocolate </label>
    </div>
     <div class="quiz_inner-wrapper">
-       <input type="checkbox"  />
+       <input type="checkbox"  required>
        <label for="">I don’t snack</label>
     </div>  
   </section>
    
      <div class="button" id="prev">&larr; Previous</div>
    <div class="button" id="next">Next &rarr;</div>
-   <div class="button" id="submit">Submit answers</div>
+   <div class="button" type="submit" id="submit" value="sumbit">Submit answers</div>
+
+   <!-- <div>
+      <input  class="button" id="submit" type="submit" name="submit"value="Submit answers">
+   </div> -->
+</form>
    
 </body>
 <script src="main.js" type="text/javascript" defer="defer"></script>
