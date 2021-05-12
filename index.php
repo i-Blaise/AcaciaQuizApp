@@ -38,7 +38,7 @@
                <p class="left-col_p">Learning about your health status is the first step <br> 
                 to achieving a healthy life and any health-conscious person <br>
                 would resonate with that. </p>
-               <a class="left-col_a" href="Quiz/index.html">Start Quiz</a>
+               <a class="left-col_a" href="Quiz/index.php">Start Quiz</a>
            </div>
            <div class="right-col_wrapper">
                <img class="right-col_img" src="Home/Images/column-image.png" alt="">
