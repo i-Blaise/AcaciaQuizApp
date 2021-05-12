@@ -238,7 +238,11 @@ input[type="submit"]:hover{
     }
     #results-form {
         height: auto;
-        width: 300px;
+        width: auto;
+        padding: 30px;
+    }
+    #email{
+      padding: 20px 30px;
     }
     #email, input[type="submit"] {
         width: auto;
