@@ -6,7 +6,10 @@ $mainPlug = new mainClass();
 if(isset($_POST['submit']) && $_POST['submit'] == 'Submit answers')
 {
    $result = $mainPlug->saveQuizzInput($_POST);
-   print_r($result);
+   if(iaaet($result) && $result == 'good')
+   header('http://acaciaquizz.sonzie.online/Results');{
+      
+   }
    die();
 }
 ?>
