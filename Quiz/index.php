@@ -6,11 +6,15 @@ $mainPlug = new mainClass();
 if(isset($_POST['submit']) && $_POST['submit'] == 'Submit answers')
 {
    $result = $mainPlug->saveQuizzInput($_POST);
-   if(iaaet($result) && $result == 'good')
-   header('http://acaciaquizz.sonzie.online/Results');{
-      
-   }
+   if(isset($result) && $result == 'good')
+   {
+   header('Location: http://localhost/acaciaQuizApp/Results/');
+   // print_r($result);
    die();
+   }else{
+      echo 'oops';
+      die();
+   }
 }
 ?>
 <!DOCTYPE html>

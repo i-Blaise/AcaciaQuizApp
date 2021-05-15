@@ -1,9 +1,9 @@
 <?php
 session_start();
 define('DB_SERVER','localhost');
-define('DB_USER','u603429269_menniablaise');
-define('DB_PASS' ,'0Tu:sZ*Gx*q');
-define('DB_NAME', 'u603429269_acacia_quizz');
+define('DB_USER','root');
+define('DB_PASS' ,'');
+define('DB_NAME', 'acacia.quizz');
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
