@@ -66,4 +66,12 @@ class mainClass extends DataBase{
         }
     }
 
+
+    function fetchQuestionsAndOptions()
+    {
+        $myQuery = "SELECT * FROM quizz_questions";
+        $result = mysqli_query($this->dbh, $myQuery);
+        return $result;
+    }
+
 }
