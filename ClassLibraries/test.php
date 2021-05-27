@@ -6,7 +6,7 @@ $testDBcon = new mainClass();
 
 
 // $result = $testDBcon->dbtest();
-$result = $testDBcon->fetchQuestionsAndOptions();
+$result = $testDBcon->updateResults($unique_code, $finalResult);
 // $row = json_encode($result);
 // foreach ($result as $port) 
 // 		{
@@ -14,7 +14,7 @@ $result = $testDBcon->fetchQuestionsAndOptions();
 //         }
 while($row = mysqli_fetch_array($result))
 {
-    echo $row['question'];
+    echo $row['unique_code'];
 
 }
 // echo $result;

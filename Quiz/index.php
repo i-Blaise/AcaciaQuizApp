@@ -5,14 +5,16 @@ $mainPlug = new mainClass();
 
 if(isset($_POST['submit']) && $_POST['submit'] == 'Submit answers')
 {
-   $result = $mainPlug->saveQuizzInput($_POST);
+   $unique_code = 'AQA'.rand(10,9999);
+   $result = $mainPlug->saveQuizzInput($_POST, $unique_code);
    if(isset($result) && $result == 'good')
    {
-   header('Location: http://localhost/acaciaQuizApp/Results/');
+   header('Location: http://localhost/acaciaQuizApp/Results/index.php?code='.$unique_code);
    // print_r($result);
    die();
    }else{
-      echo 'oops';
+      // echo 'oops';
+      print_r($result);
       die();
    }
 }
@@ -43,22 +45,22 @@ while($row = mysqli_fetch_array($result))
 
 
     <div class="quiz_inner-wrapper">
-        <input type="radio" id="fruit" name="<?php echo $row['code']; ?>" value="1" required/>
+        <input type="radio" id="fruit" name="<?php echo $row['code']; ?>" value="<?php echo $row['option1_value']; ?>" required/>
         <label for=""><?php echo $row['option1']; ?>  </label>
     </div> 
     <div class="quiz_inner-wrapper">
-        <input type="radio" id="buscuits" name="<?php echo $row['code']; ?>" value="2" /> 
+        <input type="radio" id="buscuits" name="<?php echo $row['code']; ?>" value="<?php echo $row['option2_value']; ?>" /> 
         <label for=""><?php echo $row['option2']; ?> </label>
     </div>
     <?php if(!empty($row['option3'])){ ?>
     <div class="quiz_inner-wrapper">
-       <input type="radio"  id="wait" name="<?php echo $row['code']; ?>" value="3" />
+       <input type="radio"  id="wait" name="<?php echo $row['code']; ?>" value="<?php echo $row['option3_value']; ?>" />
        <label for=""><?php echo $row['option3']; ?> </label>
     </div>  
     <?php } ?>
     <?php if(!empty($row['option4'])){ ?>
     <div class="quiz_inner-wrapper">
-       <input type="radio"  id="wait" name="<?php echo $row['code']; ?>" value="4" />
+       <input type="radio"  id="wait" name="<?php echo $row['code']; ?>" value="<?php echo $row['option4_value']; ?>" />
        <label for=""><?php echo $row['option4']; ?> </label>
     </div>  
     <?php } ?>

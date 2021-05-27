@@ -21,7 +21,7 @@ body{
     display: inline-block;
     font-size: 14px;
     font-weight: 700;
-    color: #332A86;
+    color: #F3534A;
     padding: 10px 10px 10px 10px;
   }
   
@@ -40,7 +40,7 @@ body{
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: #332A86;
+    color: #F3534A;
   }
   
   .nav > .nav-links > a:hover {
@@ -123,17 +123,17 @@ body{
     display: flex;
     flex-flow: column;
     align-items: flex-start;
-    text-align: center;
+    text-align: left;
 }
 .left-col_h2 {
     font-size: 36px;
-    color: #F28D1E;
+    color: #683191;
     line-height: 1.2;
     margin-bottom: 15px;
 }
 .left-col_h4 {
     font-size: 21px;
-    color: #332A86;
+    color: #683191;
     line-height: 1.2;
     margin-bottom: 15px;
 }
@@ -151,8 +151,27 @@ body{
 }
 .left-col_a:hover{
     background: #fff;
-    color: #F28D1E;
+    color: #F5A24D;
     border: 2px solid #F28D1E;
+}
+
+.right-col_wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  text-align: center;
+}
+.right-col_h4 {
+  font-size: 21px;
+  color: #683191;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+.right-col_h2 {
+  font-size: 36px;
+  color: #F28D1E;
+  line-height: 1.2;
+  margin-bottom: 15px;
 }
 .right-col_img {
     width: 600px;

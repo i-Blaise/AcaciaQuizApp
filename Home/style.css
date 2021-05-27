@@ -21,7 +21,7 @@ body{
     display: inline-block;
     font-size: 14px;
     font-weight: 700;
-    color: #332A86;
+    color: #F3534A;
     padding: 10px 10px 10px 10px;
   }
   
@@ -40,7 +40,7 @@ body{
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: #332A86;
+    color: #F3534A;
   }
   
   .nav > .nav-links > a:hover {
@@ -126,12 +126,12 @@ body{
 }
 .left-col_h2 {
     font-size: 48px;
-    color: #332A86;
+    color: #683191;
     line-height: 1.2;
     margin-bottom: 15px;
 }
 .left-col_p {
-    color: #736BBE;
+    color: #683191;
 }
 .left-col_a {
     text-decoration: none;
@@ -144,8 +144,8 @@ body{
 }
 .left-col_a:hover{
     background: #fff;
-    color: #F28D1E;
-    border: 2px solid #F28D1E;
+    color: #F5A24D;
+    border: 2px solid #F5A24D;
 }
 .right-col_img {
     width: 600px;

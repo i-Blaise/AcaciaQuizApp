@@ -42,7 +42,7 @@ h1{
 }
 
 .button {
-  background: #332A86;
+  background: #F3534A;
   border-radius: 5px;
   padding: 15px 25px;
   display: inline-block;
@@ -94,7 +94,7 @@ p{
 margin-top:0;
 }
 .quiz_h2 {
-    color: #332A86;
+    color: #683191;
     font-size: 30px;
     margin-bottom: 10px;
 }
@@ -107,11 +107,24 @@ margin-top:0;
 input[type="radio"] {
     transform: scale(1.5);
 }
+/* input[type="radio"]:checked:after {
+  width: 5px;
+  height: 5px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: inherit;
+  background-color: #ffa500;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid black;
+} */
 .quiz_inner-wrapper {
     margin-bottom: 25px;
 }
 label{
-    color:#332A86;
+    color:#683191;
     font-size: 16px;
 }
 #prev {
@@ -135,5 +148,8 @@ label{
   #submit {
     bottom: 0;
     left: -8px;
+}
+input[type="radio"] {
+  transform: scale(1.5);
 }
 }

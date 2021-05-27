@@ -33,11 +33,10 @@
       </div>
        <div class="inner-wrapper">
            <div class="left-col_wrapper">
-               <h2 class="left-col_h2">Free and Simple <br>
-                online testing.</h2>
-               <p class="left-col_p">Learning about your health status is the first step <br> 
-                to achieving a healthy life and any health-conscious person <br>
-                would resonate with that. </p>
+               <h2 class="left-col_h2">Take the quiz to find out how healthy your lifestyle is. </h2>
+               <p class="left-col_p">The most assured way to ensure general wellness is by <br> the conscious effort and process of making everyday health choices<br> that promote good health.<br>
+                Making decisions that improve your well-being boosts<br> the quality of your life and ensures a more fulfilling, healthy, and productive life. 
+                At Acacia health insurance we offer great policies<br> to protect the well-being of those you love, and yourself.</p>
                <a class="left-col_a" href="Quiz/index.php">Start Quiz</a>
            </div>
            <div class="right-col_wrapper">
