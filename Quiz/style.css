@@ -152,4 +152,17 @@ label{
 input[type="radio"] {
   transform: scale(1.5);
 }
+.button {
+  background: #F3534A;
+  border-radius: 5px;
+  padding: 15px 25px;
+  display: inline-block;
+  margin: 10px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow:0px 2px 5px rgb(0,0,0,0.5);
+  position: relative;
+  left: 12%;
+}
 }
