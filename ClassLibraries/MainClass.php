@@ -99,7 +99,7 @@ class mainClass extends DataBase{
 
 
 
-    function sendEmail($email)
+    function sendEmail($email, $scoreHeader, $scoreMessage)
     {
   
   
@@ -135,12 +135,12 @@ class mainClass extends DataBase{
     //Send HTML or Plain Text email
     $mail->isHTML(true);
     
-    $mail->Subject = "The Trus Hospital || Covid Test Booking";
-    $mail->Body = $msg;
+    $mail->Subject = "Acacia Health Quiz Results";
+    $mail->Body = '<h2> '.$scoreHeader.'<h2> <br> <br> <p>'.$scoreMessage.'</p>';
     // $mail->AltBody = "This is the plain text version of the email content";
         if($mail->send())
         {
-            return 'Loading...';
+            return 'sent';
         }else{
             echo "Mailer Error: " . $mail->ErrorInfo;
         }

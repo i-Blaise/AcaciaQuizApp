@@ -3,8 +3,33 @@ require_once('../ClassLibraries/MainClass.php');
 $mainPlug = new mainClass();
 
 
+if(isset($_POST['Submit Email']) && $_POST['Submit Email'] == 'Send Results To My Emails')
+{
+  print_r("emailSent");
+      die();
+  if(isset($_POST['email']))
+  {
+    $email = $_POST['email'];
+
+    $emailResult = $mainPlug->sendEmail($email, $scoreHeader, $scoreMessage);
+    if($emailResult == 'sent')
+    {
+      // $emailSent = true;
+      print_r($emailSent);
+      die();
+    }else{
+      print_r($emailSent);
+      die();
+    }
+  }
+}else{
+  print_r("oooohhhlaa");
+      // die();
+}
+
 if(isset($_GET['code']))
 {
+  $emailSent = false;
   $unique_code = $_GET['code'];
   $result = $mainPlug->fetchAnswersWithCode($unique_code);
   while($row = mysqli_fetch_array($result))
@@ -21,6 +46,25 @@ if(isset($_GET['code']))
     // print_r($resultUpdate);
     die();
   }
+
+  if(isset($finalResult) && $finalResult >= '70') {
+  $scoreHeader = "Your Score is ".$finalResult."%!! You’re a champ!";
+  $scoreMessage = "We admire your dedication to your well-being; <br> you make conscious choices to ensure you're in good health. <br>We encourage you to keep up the great work maintaining healthy lifestyles that promote healthy living.";
+
+  }elseif(isset($finalResult) && $finalResult >= '50') {
+  $scoreHeader = "Your Score is ".$finalResult."%! We admire your effort!";
+  $scoreMessage = "You're off to a great start as far as wellbeing goes, <br> learn more ways to improve on your health choices, <br> because healthy choices promote better living.";
+
+  } elseif(isset($finalResult) && $finalResult >= '30') {
+  $scoreHeader = "Your Score is ".$finalResult."%! Could be better!";
+  $scoreMessage = "Practice more ways to ensure healthy living, get more in touch with your <br>health with the consciousness that deliberate healthy choices promote healthy living. <br>Be more deliberate.";
+
+  } elseif(isset($finalResult) && $finalResult < '30') {
+  $scoreHeader = "Your Score is ".$finalResult."%! You could still make it!";
+  $scoreMessage = "Did you know that your everyday choices determine and influence the outcome of your health? <br>We create and sustain general wellness by making well informed decisions regarding our health and lifestyles.<br> So, we encourage you, to get that meal plan, choose achievable cardio routines, <br>get that membership, or find out ways you can improve your lifestyle that bests suit you. <br>Remember to start small.";
+  }
+
+
 }
 ?>
 
@@ -89,10 +133,10 @@ if(isset($_GET['code']))
            <div class="right-col_wrapper">
                <h4 class="right-col_h4">Your Quiz Results!</h4>
                <h2 class="right-col_h2"></h2>
-                <form id="results-form" method="post">
+                <form id="results-form" method="POST" action="">
                     <label class="form-header">Entering your email below to <br> <span class="bold-q">recieve your quiz results</span> </label>
                     <input type="email" id="email" name="email" placeholder="Your email">
-                    <input type="submit" value="Send Results To My Emails">
+                    <input type="submit" id="submit" name="Submit Email" value="Send Results To My Emails">
                     <p class="c-ryt">By clicking the button above, you are creating an account with Acacia and agree to our <a href="">Privacy Policy</a> and <a href="">Terms of Use</a>, including receiving emails.</p>
                 </form>
            </div>
