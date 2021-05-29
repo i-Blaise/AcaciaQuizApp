@@ -23,8 +23,9 @@ body{
     font-weight: 700;
     color: #F3534A;
     padding: 10px 10px 10px 10px;
+    text-decoration: none !important;
   }
-  
+
   .nav > .nav-btn {
     display: none;
   }

@@ -40,6 +40,7 @@
                <a class="left-col_a" href="Quiz/index.php">Start Quiz</a>
            </div>
            <div class="right-col_wrapper">
+               <img class="secondright-col_img" src="Home/Images/dr_casia.jpeg" alt="">
                <img class="right-col_img" src="Home/Images/column-image.png" alt="">
            </div>
        </div>

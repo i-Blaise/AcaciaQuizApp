@@ -1,31 +1,8 @@
 <?php
 require_once('../ClassLibraries/MainClass.php');
 $mainPlug = new mainClass();
-
-
-if(isset($_POST['Submit Email']) && $_POST['Submit Email'] == 'Send Results To My Emails')
-{
-  print_r("emailSent");
-      die();
-  if(isset($_POST['email']))
-  {
-    $email = $_POST['email'];
-
-    $emailResult = $mainPlug->sendEmail($email, $scoreHeader, $scoreMessage);
-    if($emailResult == 'sent')
-    {
-      // $emailSent = true;
-      print_r($emailSent);
-      die();
-    }else{
-      print_r($emailSent);
-      die();
-    }
-  }
-}else{
-  print_r("oooohhhlaa");
-      // die();
-}
+	// For php mailer
+	require_once '../vendor/autoload.php';
 
 if(isset($_GET['code']))
 {
@@ -65,7 +42,15 @@ if(isset($_GET['code']))
   }
 
 
+
+
+
+
+
+
+
 }
+          
 ?>
 
 
@@ -79,16 +64,63 @@ if(isset($_GET['code']))
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+
+
+          <!-- Notification -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Toastr -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <title>Live Healthy with Acacia </title>
 </head>
+
+
+
+<?php
+  if(isset($_POST['submit']) && $_POST['submit'] == 'Send Results To My Emails')
+  {
+    if(isset($_POST['email']))
+    {
+      $email = $_POST['email'];
+  
+      $emailResult = $mainPlug->sendEmail($email, $scoreHeader, $scoreMessage);
+      if($emailResult == 'sent')
+      {
+        ?>
+          <!-- Notification -->
+          
+  <script src="redirect_history.js"></script>
+  
+       <script type='text/javascript'>   
+      $(document).ready(function() {      
+      toastr.options.positionClass = "toast-top-right";
+      toastr.options.closeButton = true;
+      toastr.options.closeDuration = 300;
+      toastr.success('We have emailed you your results!', 'Awesome!!');
+  });
+  </script>
+       
+         <?php
+      }else{
+        print_r($emailResult);
+        die();
+      }
+    }
+  }
+?>
+
+
+
 <body>
    <section id="main-wrapper">
     <div class="nav">
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
-          <div class="nav-title">
+            <a class="nav-title" href="http://localhost/acaciaQuizApp/">
             Live Healthy with Acacia
-          </div>
+          </a>
         </div>
         <div class="nav-btn">
           <label for="nav-check">
@@ -136,7 +168,7 @@ if(isset($_GET['code']))
                 <form id="results-form" method="POST" action="">
                     <label class="form-header">Entering your email below to <br> <span class="bold-q">recieve your quiz results</span> </label>
                     <input type="email" id="email" name="email" placeholder="Your email">
-                    <input type="submit" id="submit" name="Submit Email" value="Send Results To My Emails">
+                    <input type="submit" id="submit" name="submit" value="Send Results To My Emails">
                     <p class="c-ryt">By clicking the button above, you are creating an account with Acacia and agree to our <a href="">Privacy Policy</a> and <a href="">Terms of Use</a>, including receiving emails.</p>
                 </form>
            </div>

@@ -5,8 +5,6 @@ define('DB_USER','root');
 define('DB_PASS' ,'');
 define('DB_NAME', 'acacia.quizz');
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
 class DataBase
 {
   // public static $con;

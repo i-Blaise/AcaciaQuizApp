@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    overflow-y: hidden;
 }
 .nav {
     display: flex;
@@ -150,7 +151,13 @@ body{
 .right-col_img {
     width: 600px;
 }
-
+.secondright-col_img {
+    border-radius: 100px;
+    height: 150px;
+    width: 300px;
+    margin-left:60%;
+    margin-top: -10%;
+}
 
 
 /* Responsive Css */
