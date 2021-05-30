@@ -57,6 +57,9 @@ body{
   @media (max-width:600px) {
     .nav {
       border-bottom: 1px solid #332A86;
+      position: absolute;
+      top: 0;
+      z-index: 1;
     }
     .nav > .nav-header {
       margin-left: 1.5rem;
@@ -161,26 +164,22 @@ body{
 }
 .dr-acacia{
   position: absolute;
-  top: 100px;
+  top: 150px;
   right: 27%;
 }
 .acacia-card_wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 8rem;
+  margin-top: 10rem;
 }
 .bottom-image {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 350;
+  width: 400px;
 }
 
 /* Responsive Css */
-@media (min-width: 992px){
-
-}
-
 @media (max-width: 767px){
     .inner-wrapper {
         display: flex;
@@ -189,4 +188,39 @@ body{
         justify-content: space-around;
         margin: 0 auto;
     }
+    .left-col_wrapper {
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+      width: auto;
+      padding: 7rem 2rem;
+  }
+  .right-col_wrapper {
+    height: auto;
+    width: auto;
+    background: #683191;
+  }
+  .acacia-card_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .dr-acacia {
+    position: relative;
+    top: 100px;
+    right: 50px;
+    width: 280px;
+  }
+  .bottom-image {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 415px;
+  }
+  .acacia-card {
+    position: relative;
+    bottom: 324px;
+    width: 250px;
+    left: 97px;
+  }
 }
