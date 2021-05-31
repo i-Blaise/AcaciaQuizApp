@@ -5,6 +5,7 @@ $( document ).ready(function() {
     
     
     var child = 1;
+    // $("#submit").addClass("disabled");
     var length = $("section").length - 1;
     $("#prev").addClass("disabled");
     $("#submit").addClass("disabled");
