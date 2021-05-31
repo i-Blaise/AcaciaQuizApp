@@ -16,7 +16,7 @@
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
           <div class="nav-title">
-            <a class="nav-logo" href=""><img src="Home/images/acacia.png" alt="" width="170"></a>
+            Live Healthy with Acacia
           </div>
         </div>
         <div class="nav-btn">
@@ -33,16 +33,15 @@
       </div>
        <div class="inner-wrapper">
            <div class="left-col_wrapper">
-               <h2 class="left-col_h2">Take the quiz to find out <br> how healthy your lifestyle is. </h2>
-               <p class="left-col_p">The most assured way to ensure general wellness is by <br> the conscious effort and process of making everyday health choices<br> that promote good health.
+               <h2 class="left-col_h2">Take the quiz to find out how healthy your lifestyle is. </h2>
+               <p class="left-col_p">The most assured way to ensure general wellness is by <br> the conscious effort and process of making everyday health choices<br> that promote good health.<br>
                 Making decisions that improve your well-being boosts<br> the quality of your life and ensures a more fulfilling, healthy, and productive life. 
-                <br>At Acacia health insurance we offer great policies<br> to protect the well-being of those you love, and yourself.</p>
-               <a class="left-col_a" href="Quiz/">Start Quiz</a>
+                At Acacia health insurance we offer great policies<br> to protect the well-being of those you love, and yourself.</p>
+               <a class="left-col_a" href="Quiz/index.php">Start Quiz</a>
            </div>
            <div class="right-col_wrapper">
-               <div class="dr-acacia_wrapper"><img class="dr-acacia" src="Home/images/dr_acacia 1.png" alt="" width="350"></div>
-               <div class="acacia-card_wrapper"><img class="acacia-card" src="Home/images/acacia-card.png" alt=""></div>
-               <div class="bottom-image_wrapper"><img class="bottom-image" src="Home/images/bottom-image.png" alt=""></div>
+               <img class="secondright-col_img" src="Home/Images/dr_casia.jpeg" alt="">
+               <img class="right-col_img" src="Home/Images/column-image.png" alt="">
            </div>
        </div>
        <footer></footer>
