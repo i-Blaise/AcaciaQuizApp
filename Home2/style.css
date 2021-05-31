@@ -181,13 +181,18 @@ body{
 
 /* Responsive Css */
 @media (max-width: 767px){
-    .inner-wrapper {
+  body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+  .inner-wrapper {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-around;
         margin: 0 auto;
-    }
+  }
     .left-col_wrapper {
       display: flex;
       flex-flow: column;
@@ -210,10 +215,11 @@ body{
     position: relative;
     top: 100px;
     right: 40px;
-    width: 280px;
+    width: 250px;
   }
   .bottom-image_wrapper {
     text-align: end;
+    display: none;
   }
   .bottom-image {
     position: relative;
@@ -225,7 +231,7 @@ body{
   .acacia-card {
     position: relative;
     bottom: 324px;
-    width: 250px;
+    width: 220px;
     left: 97px;
   }
   .left-col_h2 {
