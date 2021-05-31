@@ -149,6 +149,9 @@ label{
     bottom: 0;
     left: -8px;
 }
+.disabled {
+  display:none!important;
+}
 input[type="radio"] {
   transform: scale(1.5);
 }
