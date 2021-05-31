@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Home/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Live Healthy with Acacia </title>
 </head>
 <body>
@@ -40,8 +40,8 @@
                <a class="left-col_a" href="Quiz/index.php">Start Quiz</a>
            </div>
            <div class="right-col_wrapper">
-               <img class="secondright-col_img" src="Home/Images/dr_casia.jpeg" alt="">
-               <img class="right-col_img" src="Home/Images/column-image.png" alt="">
+               <img class="secondright-col_img" src="Images/dr_casia.jpeg" alt="">
+               <img class="right-col_img" src="Images/column-image.png" alt="">
            </div>
        </div>
        <footer></footer>
