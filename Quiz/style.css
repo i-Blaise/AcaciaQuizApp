@@ -176,7 +176,7 @@ label{
   }
   #submit {
     bottom: 0;
-    left: -8px;
+    left: 35px;
 }
 .disabled {
   display:none!important;
