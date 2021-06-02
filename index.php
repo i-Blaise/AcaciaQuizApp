@@ -40,6 +40,10 @@
                <a class="left-col_a" href="Quiz/">Start Quiz</a>
            </div>
            <div class="right-col_wrapper">
+               <div class="nav-link-pos">
+                  <a href="#" target="_blank">Contact Us</a>
+                  <a href="#" target="_blank">Help Center</a>
+               </div>
                <div class="dr-acacia_wrapper"><img class="dr-acacia" src="Home/images/dr_acacia 1.png" alt="" width="350"></div>
                <div class="acacia-card_wrapper"><img class="acacia-card" src="Home/images/acacia-card.png" alt=""></div>
                <div class="bottom-image_wrapper"><img class="bottom-image" src="Home/images/bottom-image.png" alt=""></div>

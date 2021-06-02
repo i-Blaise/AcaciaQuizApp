@@ -188,6 +188,17 @@ input {
 .disabled {
   display: none !important;
 }
+.nav-link-pos {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3rem;
+  margin-top: 2rem;
+}
+.nav-link-pos a {
+  text-decoration: none;
+  color: #fff;
+  padding-right: 20px;
+}
 
 /* Responsive Css */
 @media (max-width: 767px){
@@ -247,4 +258,7 @@ input {
   .left-col_h2 {
     font-size: 31px;
   }
+  .nav-link-pos {
+    display: none;
+}
 }
