@@ -213,6 +213,8 @@ input::placeholder{
     border-radius: 0px;
 }
 input[type="submit"] {
+   -webkit-appearance:none;
+   opacity: 1;
     width: 350px;
     max-width: 350px;
     padding: 20px;
