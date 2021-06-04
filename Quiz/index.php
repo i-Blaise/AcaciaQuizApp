@@ -3,7 +3,7 @@ require_once('../ClassLibraries/MainClass.php');
 $mainPlug = new mainClass();
 
 
-if(isset($_POST['submit']) && $_POST['submit'] == 'Submit answers')
+if(isset($_POST['submit']) && $_POST['submit'] == 'Submit')
 {
    $unique_code = 'AQA'.rand(10,9999);
    $result = $mainPlug->saveQuizzInput($_POST, $unique_code);
