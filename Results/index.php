@@ -79,7 +79,7 @@ if(isset($_GET['code']))
 
 
 <?php
-  if(isset($_POST['submit']) && $_POST['submit'] == 'Send Results To My Emails')
+  if(isset($_POST['submit']) && $_POST['submit'] == 'Send Results To My Email')
   {
     if(isset($_POST['email']))
     {
@@ -168,7 +168,7 @@ if(isset($_GET['code']))
                 <form id="results-form" method="POST" action="">
                     <label class="form-header">Entering your email below to <br> <span class="bold-q">recieve your quiz results</span> </label>
                     <input type="email" id="email" name="email" placeholder="Your email">
-                    <input type="submit" id="submit" name="submit" value="Send Results To Email">
+                    <input type="submit" id="submit" name="submit" value="Send Results To My Email">
                     <p class="c-ryt">By clicking the button above, you are creating an account with Acacia and agree to our <a href="">Privacy Policy</a> and <a href="">Terms of Use</a>, including receiving emails.</p>
                 </form>
            </div>
