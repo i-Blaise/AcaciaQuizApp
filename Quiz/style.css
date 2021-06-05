@@ -160,7 +160,7 @@ label{
     left: -16.5%;
 }
 #submit {
-  bottom: 75px;
+  bottom: 5px;
 }
 
 @media (max-width: 767px) {

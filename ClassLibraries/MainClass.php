@@ -173,7 +173,6 @@ class mainClass extends DataBase{
                                         <td style="padding:0 0 36px 0;color:#153643;">
                                             <h1 style="font-size:24px;margin:0 0 20px 0;font-family:Arial,sans-serif;">'. $scoreHeader .'</h1>
                                             <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">'. $scoreMessage .'</p>
-                                            <p style="margin:0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;"><a href="http://www.example.com" style="color:#ee4c50;text-decoration:underline;">In tempus felis blandit</a></p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -309,17 +308,17 @@ class mainClass extends DataBase{
                                     <tr>
                                         <td style="padding:0;width:50%;" align="left">
                                             <p style="margin:0;font-size:14px;line-height:16px;font-family:Arial,sans-serif;color:#ffffff;">
-                                                &reg; Someone, Somewhere 2021<br/><a href="http://www.example.com" style="color:#ffffff;text-decoration:underline;">Unsubscribe</a>
+                                                &reg; Acacia Health Insurance 2021<br/><a href="https://ahighana.com/" style="color:#ffffff;text-decoration:underline;">Visit Acacia</a>
                                             </p>
                                         </td>
                                         <td style="padding:0;width:50%;" align="right">
                                             <table role="presentation" style="border-collapse:collapse;border:0;border-spacing:0;">
                                                 <tr>
                                                     <td style="padding:0 0 0 10px;width:38px;">
-                                                        <a href="http://www.twitter.com/" style="color:#ffffff;"><img src="images/tw.png" alt="Twitter" width="38" style="height:auto;display:block;border:0;" /></a>
+                                                        <a href="https://twitter.com/health_acacia" style="color:#ffffff;"><img src="https://acaciaquizz.sonzie.online/emailTemp/images/tw.gif" alt="Twitter" width="38" style="height:auto;display:block;border:0;" /></a>
                                                     </td>
                                                     <td style="padding:0 0 0 10px;width:38px;">
-                                                        <a href="http://www.facebook.com/" style="color:#ffffff;"><img src="images/fb.png" alt="Facebook" width="38" style="height:auto;display:block;border:0;" /></a>
+                                                        <a href="https://web.facebook.com/acaciahealthinsurance" style="color:#ffffff;"><img src="https://acaciaquizz.sonzie.online/emailTemp/images/fb.gif" alt="Facebook" width="38" style="height:auto;display:block;border:0;" /></a>
                                                     </td>
                                                 </tr>
                                             </table>
