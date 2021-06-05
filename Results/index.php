@@ -25,7 +25,7 @@ if(isset($_GET['code']))
   }
 
   if(isset($finalResult) && $finalResult >= '70') {
-  $scoreHeader = "Your Score is ".$finalResult."%!! You’re a champ!";
+  $scoreHeader = "Your Score is ".$finalResult."%!! You are a champ!";
   $scoreMessage = "We admire your dedication to your well-being; <br> you make conscious choices to ensure you're in good health. <br>We encourage you to keep up the great work maintaining healthy lifestyles that promote healthy living.";
 
   }elseif(isset($finalResult) && $finalResult >= '50') {
