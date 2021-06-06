@@ -63,7 +63,9 @@ if(isset($_GET['code']))
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttonStyle.css">
 
 
 
@@ -119,7 +121,7 @@ if(isset($_GET['code']))
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
             <a class="nav-title" href="http://localhost/acaciaQuizApp/">
-            Live Healthy with Acacia
+            <img src="../Home/images/acacia.png" alt="" width="170">
           </a>
         </div>
         <div class="nav-btn">
@@ -156,7 +158,7 @@ if(isset($_GET['code']))
          <?php } elseif(isset($finalResult) && $finalResult < '30') {?>
           <div class="left-col_wrapper">
                <h2 class="left-col_h2">Your Score is <?php echo $finalResult ?>%! You could still make it!</h2>
-               <p class="left-col_p">Did you know that your everyday choices determine and influence the outcome of your health? <br>We create and sustain general wellness by making well informed decisions regarding our health and lifestyles.<br> So, we encourage you, to get that meal plan, choose achievable cardio routines, <br>get that membership, or find out ways you can improve your lifestyle that bests suit you. <br>Remember to start small.</p>
+               <p class="left-col_p">Did you know that your everyday choices determine and influence the outcome of your health? We create and sustain general wellness by making well informed decisions regarding our health and lifestyles. So, we encourage you, to get that meal plan, choose achievable cardio routines, get that membership, or find out ways you can improve your lifestyle that bests suit you. <br>Remember to start small.</p>
                 <iframe src="https://giphy.com/embed/12XDYvMJNcmLgQ" width="480" height="359" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/luck-good-im-rooting-for-you-12XDYvMJNcmLgQ"></a></p>
         </div>
          <?php }?>
@@ -171,8 +173,28 @@ if(isset($_GET['code']))
                     <input type="submit" id="submit" name="submit" value="Send Results To My Email">
                     <p class="c-ryt">By clicking the button above, you are creating an account with Acacia and agree to our <a href="">Privacy Policy</a> and <a href="">Terms of Use</a>, including receiving emails.</p>
                 </form>
+
+                <div class="container">
+    <div class="row" >
+    <div class="col-md-12" style="text-align:center;margin-left:110px;">
+
+        
+        <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>
+        
+        <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-instagram"><i class="fa fa-instagram"></i></a>
+        
+        <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-linkedin"><i class="fa fa-linkedin"></i></a>
+       
+        <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a>
+       
+    </div>
+
+
+</div>
+</div>
            </div>
        </div>
+
        <footer></footer>
    </section> 
 </body>
