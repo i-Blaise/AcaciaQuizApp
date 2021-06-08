@@ -13,7 +13,7 @@ if(isset($_GET['code']))
   {
       $sumResult = $row['q1']+$row['q2']+$row['q3']+$row['q4']+$row['q5']+$row['q6']+$row['q7']+$row['q8']+$row['q9']+$row['q10'];
       $finalResult = $sumResult/20 * 100;
-      // $finalResult = 30;
+      // $finalResult = 50;
   
   }
   $resultUpdate = $mainPlug->updateResults($unique_code, $finalResult);
@@ -140,25 +140,25 @@ if(isset($_GET['code']))
          <?php if(isset($finalResult) && $finalResult >= '70') {?>
         <div class="left-col_wrapper">
                <h2 class="left-col_h2">Your Score is <?php echo $finalResult ?>%!! You’re a champ!</h2>
-               <p class="left-col_p">We admire your dedication to your well-being; <br> you make conscious choices to ensure you're in good health. <br>We encourage you to keep up the great work maintaining healthy lifestyles that promote healthy living.</p>
+               <p class="left-col_p">We admire your dedication to your well-being;  you make conscious choices to ensure you're in good health. We encourage you to keep up the great work maintaining healthy lifestyles that promote healthy living.</p>
                <iframe src="https://giphy.com/embed/daxx90f4tsnraRxhZI" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/westvirginiau-wvu-mountaineer-mascot-daxx90f4tsnraRxhZI"></a></p>
         </div>
          <?php } elseif(isset($finalResult) && $finalResult >= '50') {?>
           <div class="left-col_wrapper">
                <h2 class="left-col_h2">Your Score is <?php echo $finalResult ?>%! We admire your effort!</h2>
-               <p class="left-col_p">You're off to a great start as far as wellbeing goes, <br> learn more ways to improve on your health choices, <br> because healthy choices promote better living.</p>
+               <p class="left-col_p">You're off to a great start as far as wellbeing goes,  learn more ways to improve on your health choices,  because healthy choices promote better living.</p>
                <iframe src="https://giphy.com/embed/cdItLch8J2dBfAZJq4" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/gap-good-job-the-gap-cdItLch8J2dBfAZJq4"></a></p>
         </div>
          <?php } elseif(isset($finalResult) && $finalResult >= '30') {?>
           <div class="left-col_wrapper">
                <h2 class="left-col_h2">Your Score is <?php echo $finalResult ?>%! Could be better!</h2>
-               <p class="left-col_p">Practice more ways to ensure healthy living, get more in touch with your <br>health with the consciousness that deliberate healthy choices promote healthy living. <br>Be more deliberate.</p>
+               <p class="left-col_p">Practice more ways to ensure healthy living, get more in touch with your health with the consciousness that deliberate healthy choices promote healthy living. Be more deliberate.</p>
                <iframe src="https://giphy.com/embed/5pUHtgG70JjO9YHZPD" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/brooklynninenine-nbc-tv-show-brooklyn99-5pUHtgG70JjO9YHZPD"></a></p>
         </div>
          <?php } elseif(isset($finalResult) && $finalResult < '30') {?>
           <div class="left-col_wrapper">
                <h2 class="left-col_h2">Your Score is <?php echo $finalResult ?>%! You could still make it!</h2>
-               <p class="left-col_p">Did you know that your everyday choices determine and influence the outcome of your health? We create and sustain general wellness by making well informed decisions regarding our health and lifestyles. So, we encourage you, to get that meal plan, choose achievable cardio routines, get that membership, or find out ways you can improve your lifestyle that bests suit you. <br>Remember to start small.</p>
+               <p class="left-col_p">Did you know that your everyday choices determine and influence the outcome of your health? We create and sustain general wellness by making well informed decisions regarding our health and lifestyles. So, we encourage you, to get that meal plan, choose achievable cardio routines, get that membership, or find out ways you can improve your lifestyle that bests suit you. Remember to start small.</p>
                 <iframe src="https://giphy.com/embed/12XDYvMJNcmLgQ" width="480" height="359" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/luck-good-im-rooting-for-you-12XDYvMJNcmLgQ"></a></p>
         </div>
          <?php }?>
@@ -175,8 +175,13 @@ if(isset($_GET['code']))
                 </form>
 
                 <div class="container">
+                <div class="row" >
+                <p class="center-col_p">
+                Follow our social media:
+                </p>
+                </div>
     <div class="row" >
-    <div class="col-md-12" style="text-align:center;margin-left:110px;">
+    <div class="col-md-12" style="text-align:center;margin-left:50px;display:inline-flex;">
 
         
         <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>

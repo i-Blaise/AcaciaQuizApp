@@ -303,7 +303,7 @@ class mainClass extends DataBase{
                             </td>
                         </tr>
                         <tr>
-                            <td style="padding:30px;background:#ee4c50;">
+                            <td style="padding:30px;background:#683191;">
                                 <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;font-size:9px;font-family:Arial,sans-serif;">
                                     <tr>
                                         <td style="padding:0;width:50%;" align="left">
@@ -315,10 +315,10 @@ class mainClass extends DataBase{
                                             <table role="presentation" style="border-collapse:collapse;border:0;border-spacing:0;">
                                                 <tr>
                                                     <td style="padding:0 0 0 10px;width:38px;">
-                                                        <a href="https://twitter.com/health_acacia" style="color:#ffffff;"><img src="https://acaciaquizz.sonzie.online/emailTemp/images/tw.gif" alt="Twitter" width="38" style="height:auto;display:block;border:0;" /></a>
+                                                        <a href="https://twitter.com/health_acacia" style="color:#ffffff;"><img src="https://acaciaquizz.sonzie.online/emailTemp/images/twitter.png" alt="Twitter" width="38" style="height:auto;display:block;border:0;" /></a>
                                                     </td>
                                                     <td style="padding:0 0 0 10px;width:38px;">
-                                                        <a href="https://web.facebook.com/acaciahealthinsurance" style="color:#ffffff;"><img src="https://acaciaquizz.sonzie.online/emailTemp/images/fb.gif" alt="Facebook" width="38" style="height:auto;display:block;border:0;" /></a>
+                                                        <a href="https://web.facebook.com/acaciahealthinsurance" style="color:#ffffff;"><img src="https://acaciaquizz.sonzie.online/emailTemp/images/facebook.png" alt="Facebook" width="38" style="height:auto;display:block;border:0;" /></a>
                                                     </td>
                                                 </tr>
                                             </table>

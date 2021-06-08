@@ -140,7 +140,16 @@ body{
 }
 .left-col_p {
     color: #736BBE;
+    margin-right: 100px
 }
+
+.center-col_p {
+  color: #736BBE;
+  text-align: center;
+  margin-right: 100px
+}
+
+
 .left-col_a {
     text-decoration: none;
     background: #F28D1E;
