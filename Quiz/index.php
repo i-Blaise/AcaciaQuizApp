@@ -45,22 +45,22 @@ while($row = mysqli_fetch_array($result))
 
 
     <div class="quiz_inner-wrapper">
-        <input type="radio" id="fruit" name="<?php echo $row['code']; ?>" value="<?php echo $row['option1_value']; ?>" required/>
+        <input type="radio" id="option" name="<?php echo $row['code']; ?>" value="<?php echo $row['option1_value']; ?>" required/>
         <label for=""><?php echo $row['option1']; ?>  </label>
     </div> 
     <div class="quiz_inner-wrapper">
-        <input type="radio" id="buscuits" name="<?php echo $row['code']; ?>" value="<?php echo $row['option2_value']; ?>" /> 
+        <input type="radio" id="option" name="<?php echo $row['code']; ?>" value="<?php echo $row['option2_value']; ?>" /> 
         <label for=""><?php echo $row['option2']; ?> </label>
     </div>
     <?php if(!empty($row['option3'])){ ?>
     <div class="quiz_inner-wrapper">
-       <input type="radio"  id="wait" name="<?php echo $row['code']; ?>" value="<?php echo $row['option3_value']; ?>" />
+       <input type="radio"  id="option" name="<?php echo $row['code']; ?>" value="<?php echo $row['option3_value']; ?>" />
        <label for=""><?php echo $row['option3']; ?> </label>
     </div>  
     <?php } ?>
     <?php if(!empty($row['option4'])){ ?>
     <div class="quiz_inner-wrapper">
-       <input type="radio"  id="wait" name="<?php echo $row['code']; ?>" value="<?php echo $row['option4_value']; ?>" />
+       <input type="radio"  id="option" name="<?php echo $row['code']; ?>" value="<?php echo $row['option4_value']; ?>" />
        <label for=""><?php echo $row['option4']; ?> </label>
     </div>  
     <?php } ?>
