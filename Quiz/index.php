@@ -64,15 +64,19 @@ while($row = mysqli_fetch_array($result))
        <label for=""><?php echo $row['option4']; ?> </label>
     </div>  
     <?php } ?>
+
+    <div class="button" id="prev">&larr; Previous</div>
+   <div class="button" id="next">Next &rarr;</div>
+   <input  class="button disabled" id="submit" type="submit" name="submit" value="Submit">
    </section>
 
    <?php
 
 }
 ?>
-     <div class="button" id="prev">&larr; Previous</div>
-   <div class="button" id="next">Next &rarr;</div>
-   <input  class="button" id="submit" type="submit" name="submit" value="Submit">
+     <!-- <div class="button" id="prev">&larr; Previous</div>
+   <div class="button" id="next">Next &rarr;</div> -->
+   <!-- <input  class="button" id="submit" type="submit" name="submit" value="Submit"> -->
 </form>
    
 </body>
