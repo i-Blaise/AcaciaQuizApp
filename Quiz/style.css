@@ -74,7 +74,7 @@ section {
   display: flex;
   flex-flow: column;
   align-items: flex-start;  
-  padding: 50px 30px;
+  padding: 65px 30px;
   max-width: 51%;
   margin: 10px auto;
   background:white;
@@ -171,6 +171,7 @@ label{
 section{
   max-width: 100%;
   text-align: left;
+  padding: 25px 30px;
 }
 
 .disabled {
