@@ -57,12 +57,13 @@ h1{
 
 #prev {
   position: relative;
-  bottom: 4.6rem;
+  bottom: 0.6rem;
 }
 
 #next {
   position: relative;
   left: 82%;
+  bottom: -4.4rem;
 }
 
 .disabled {
