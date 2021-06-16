@@ -80,7 +80,7 @@ $( document ).ready(function() {
         if (child >= length+1) {
           $(this).addClass("disabled");
           $("#next").addClass("disabled");
-          $('#submit').removeClass("disabled");
+          $("#submit").removeClass("disabled");
           // alert(length);
         }
         if (child <= length) {
