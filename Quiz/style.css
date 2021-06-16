@@ -168,12 +168,18 @@ label{
 
 
 @media (max-width: 767px) {
-section{
-  max-width: 100%;
-  text-align: left;
-  padding: 25px 30px;
+  section {
+    max-width: 100%;
+    text-align: left;
+    padding: 0 30px;
+    height: 596px;
 }
-
+label {
+  font-size: 14px;
+}
+.quiz_h2 {
+  font-size: 24px;
+}
 .disabled {
   display:none!important;
 }
@@ -219,11 +225,13 @@ input[type="radio"]:checked {
 }
 #next {
   position: relative;
-  left: 68%;
+  left: 61%;
+  bottom: -3.4rem;
 }
 #previous {
   position: relative;
-  left: -8.5%;
+  bottom: 1.1rem;
+  left: -6%;
 }
 }
 
