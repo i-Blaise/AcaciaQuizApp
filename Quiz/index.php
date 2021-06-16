@@ -67,7 +67,7 @@ while($row = mysqli_fetch_array($result))
 
     <div class="button" id="prev">&larr; Previous</div>
    <div class="button" id="next">Next &rarr;</div>
-   <input  class="button disabled" id="submit" type="submit" name="submit" value="Submit">
+   <!-- <input  class="button" id="submit" type="submit" name="submit" value="Submit"> -->
    </section>
 
    <?php
@@ -76,7 +76,7 @@ while($row = mysqli_fetch_array($result))
 ?>
      <!-- <div class="button" id="prev">&larr; Previous</div>
    <div class="button" id="next">Next &rarr;</div> -->
-   <!-- <input  class="button" id="submit" type="submit" name="submit" value="Submit"> -->
+   <input  class="button" id="submit" type="submit" name="submit" value="Submit">
 </form>
    
 </body>

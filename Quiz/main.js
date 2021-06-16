@@ -9,7 +9,7 @@ $( document ).ready(function() {
     var length = $("section").length - 1;
     // alert(length)
     $("#prev").addClass("disabled");
-    // $("#submit").addClass("disabled");
+    $("#submit").addClass("disabled");
     
     $("section").not("section:nth-of-type(1)").hide();
     $("section").not("section:nth-of-type(1)").css('transform','translateX(100px)');
@@ -65,22 +65,23 @@ $( document ).ready(function() {
 
       var id = $(this).attr("id");
       if (id == "next") {
-
+        // alert('name');
 
       var current_index = $(this).parent().index("section");
       // var name = $("#option").attr("name");
-      // alert(name);
+ 
 			if(validateStep(current_index)){
-
 
         $("#svg_form_time rect").css("fill", active_color);
         $("#svg_form_time circle").css("fill", active_color);
 
-        $("#prev").removeClass("disabled");
-        if (child >= length) {
+        
+        
+        if (child >= length+1) {
           $(this).addClass("disabled");
+          $("#next").addClass("disabled");
           $('#submit').removeClass("disabled");
-          alert(length);
+          // alert(length);
         }
         if (child <= length) {
           child++;
@@ -124,7 +125,7 @@ $( document ).ready(function() {
 					if(($("input[name='q1']:checked").length === 0)){
 						alert('Please select an option');
 						return false;
-					}
+          }
 					return true;
 				break;
 				case 1:
