@@ -50,11 +50,19 @@ h1{
   font-weight: bold;
   color: white;
   cursor: pointer;
-  box-shadow:0px 2px 5px rgb(0,0,0,0.5);
+  box-shadow: 0px 2px 5px rgb(0 0 0 / 50%);
+  -webkit-appearance: none;
+  opacity: 1;
+}
+
+#prev {
   position: relative;
-  left: 12%;
-  -webkit-appearance:none;
-  opacity: 1
+  bottom: 4.6rem;
+}
+
+#next {
+  position: relative;
+  left: 82%;
 }
 
 .disabled {
@@ -156,28 +164,14 @@ label{
     color:#683191;
     font-size: 16px;
 }
-#prev {
-    left: -16.5%;
-}
-#submit {
-  bottom: 5px;
-}
+
 
 @media (max-width: 767px) {
-  section{
-    max-width: 100%;
-    text-align: left;
-  }
-  #prev {
-    left: -8.5%;
-  }
-  #next {
-    left: 9%;
-  }
-  #submit {
-    bottom: 0;
-    left: 35px;
+section{
+  max-width: 100%;
+  text-align: left;
 }
+
 .disabled {
   display:none!important;
 }
