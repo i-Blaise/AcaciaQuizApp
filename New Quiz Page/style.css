@@ -5,7 +5,7 @@ html {
   min-height:800px;
 }
 body {
-  background: url('/images/Resound@2x.png');
+  background: url('images/Resound@2x.png');
   background-size:cover;
   background-repeat:no-repeat;
   text-align: center;
