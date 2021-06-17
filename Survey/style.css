@@ -192,7 +192,7 @@ label{
     max-width: 100%;
     text-align: left;
     padding: 0 30px;
-    height: 596px;
+    height: 420px;
 }
 label {
   font-size: 14px;
@@ -243,14 +243,13 @@ input[type="radio"]:checked {
   -webkit-appearance:none;
   opacity: 1
 }
-#next {
-  position: relative;
-  left: 61%;
-  bottom: -3.4rem;
+#submit {
+  width: 34.5%;
+  position: absolute;
+  right: 20px;
 }
-#previous {
-  position: relative;
-  bottom: 1.1rem;
-  left: -6%;
+#prev, #next {
+  position: absolute;
+  left: 20px;
 }
 }

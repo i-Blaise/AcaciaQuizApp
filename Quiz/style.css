@@ -81,7 +81,7 @@ section {
   background:rgba(255,255,255,0.9);
   backdrop-filter:blur(10px);
   border-radius:5px;
-  transition:transform 0.2s ease-in-out;
+  transition:transform 0.9s ease-in-out;
 }
 label {
     margin-left: 30px;
@@ -226,7 +226,7 @@ input[type="radio"]:checked {
 #next {
   position: relative;
   left: 61%;
-  bottom: -3.4rem;
+  bottom: -3.99rem;
 }
 #previous {
   position: relative;
