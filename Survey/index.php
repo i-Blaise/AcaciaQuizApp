@@ -1,3 +1,39 @@
+<?php
+require_once('../ClassLibraries/MainClass.php');
+$mainPlug = new mainClass();
+
+
+if(isset($_GET['code']))
+{
+  $code_result = $mainPlug->fetchLastUserUniqueCode();
+  $uCode = mysqli_fetch_array($code_result);
+  if($_GET['code'] != $uCode['unique_code'])
+  {
+    header('Location: http://localhost/acaciaQuizApp');
+  }else{
+    $unique_code = $_GET['code'];
+  }
+}else{
+  header('Location: http://localhost/acaciaQuizApp');
+}
+
+
+
+if(isset($_POST['submit']) && $_POST['submit'] == 'Submit')
+{
+   $result = $mainPlug->saveBrandQuestionInput($_POST, $unique_code);
+   if(isset($result) && $result == 'good')
+   {
+   header('Location: http://localhost/acaciaQuizApp/Results/index.php?code='.$unique_code);
+   // print_r($result);
+   die();
+   }else{
+      // echo 'oops';
+      print_r($result);
+      die();
+   }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,57 +50,75 @@
 
  <h1>You are almost done. <br> <span class="h1-child">We would like to know your take on a few brand-related questions.</span> </h1>
  <form name="healthQuizz" onsubmit="return validateForm()" method="POST">
+
+ <?php
+
+$result = $mainPlug->fetchFirstSurvey();
+$s1 = mysqli_fetch_array($result);
+?>
    <section>
-     <h2 class="quiz_h2">Are you following Acacia Health Insurance on any social platform?</h2>
+     <h2 class="quiz_h2"><?php echo $s1['question']; ?></h2>
      <p class="quiz_p">Just a little more information and you are out. Thanks.</p>
      <div class="quiz_inner-wrapper">
-        <input type="radio" id="sleep" name="q11" value="1" required/>
-        <label for="">Yes  </label>
+        <input type="radio" id="sleep" name="s1" value="<?php echo $s1['option1']; ?>"/>
+        <label for=""><?php echo $s1['option1']; ?></label>
      </div> 
     <div class="quiz_inner-wrapper">
-        <input type="radio" id="hit" name="q11" value="2" /> 
-        <label for="">No  </label>
+        <input type="radio" id="hit" name="s1" value="<?php echo $s1['option2']; ?>" /> 
+        <label for=""><?php echo $s1['option2']; ?></label>
     </div> 
    </section>
  
+
+   <?php
+
+$result = $mainPlug->fetchSecondSurvey();
+$s2 = mysqli_fetch_array($result);
+?>
    <section>
-     <h2 class="quiz_h2">Which of these brand events would you consider joining? </h2>
+     <h2 class="quiz_h2"><?php echo $s2['question']; ?></h2>
      <div class="quiz_inner-wrapper">
-        <input type="checkbox" id="behind" name="q12" value="1" required/>
-        <label for="">Online aerobics sessions </label>
+        <input type="checkbox" id="behind" name="s2_option1" value="<?php echo $s2['option1']; ?>"/>
+        <label for=""><?php echo $s2['option1']; ?></label>
      </div> 
     <div class="quiz_inner-wrapper">
-        <input type="checkbox" id="bent" name="q12" value="2"  /> 
-        <label for="">Online yoga sessions </label>
+        <input type="checkbox" id="bent" name="s2_option2" value="<?php echo $s2['option2']; ?>"  /> 
+        <label for=""><?php echo $s2['option2']; ?></label>
     </div> 
     <div class="quiz_inner-wrapper">
-        <input type="checkbox" id="bent" name="q12" value="3"  /> 
-        <label for="">Health talks </label>
+        <input type="checkbox" id="bent" name="s2_option3" value="<?php echo $s2['option3']; ?>"  /> 
+        <label for=""><?php echo $s2['option3']; ?></label>
     </div> 
     <div class="quiz_inner-wrapper">
-        <input type="checkbox" id="bent" name="q12" value="4"  /> 
-        <label for="">Yoga and paint at the beach </label>
+        <input type="checkbox" id="bent" name="s2_option4" value="<?php echo $s2['option4']; ?>"  /> 
+        <label for=""><?php echo $s2['option4']; ?></label>
     </div> 
     <div class="quiz_inner-wrapper">
-        <input type="checkbox" id="bent" name="q12" value="5"  /> 
-        <label for="">Other........ </label>
+        <input type="checkbox" id="bent" name="s2_option5" value="<?php echo $s2['option5']; ?>"  /> 
+        <label for=""><?php echo $s2['option5']; ?></label>
     </div>
     <span style="color: #332A86; font-size: 14px; opacity: 0.5;">(tick multiple boxes that applies to you) </span> 
    </section>
  
+
+   <?php
+
+$result = $mainPlug->fetchThirdSurvey();
+$s3 = mysqli_fetch_array($result);
+?>
    <section>
-    <h2 class="quiz_h2">Which platforms would you prefer these be held on?</h2>
+    <h2 class="quiz_h2"><?php echo $s3['question']; ?>"</h2>
     <div class="quiz_inner-wrapper">
-       <input type="checkbox" id="screen" name="q11" value="1"  required/>
-       <label for="">Facebook</label>
+       <input type="checkbox" id="screen" name="s3_option1" value="<?php echo $s3['option1']; ?>"/>
+       <label for=""><?php echo $s3['option1']; ?></label>
     </div> 
    <div class="quiz_inner-wrapper">
-       <input type="checkbox" id="close" name="q11" value="2"  /> 
-       <label for="">Instagram </label>
+       <input type="checkbox" id="close" name="s3_option2" value="<?php echo $s3['option2']; ?>"  /> 
+       <label for=""><?php echo $s3['option2']; ?></label>
    </div>
    <div class="quiz_inner-wrapper">
-    <input type="checkbox" id="bent" name="q12" value="5"  /> 
-    <label for="">Teams /Zoom </label>
+    <input type="checkbox" id="bent" name="s3_option3" value="<?php echo $s3['option3']; ?>"  /> 
+    <label for=""><?php echo $s3['option3']; ?></label>
    </div>
    <span style="color: #332A86; font-size: 14px; opacity: 0.5;">(tick multiple boxes that applies to you) </span>  
   </section>

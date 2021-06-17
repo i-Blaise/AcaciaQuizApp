@@ -67,6 +67,53 @@ class mainClass extends DataBase{
         }
     }
 
+    function saveBrandQuestionInput($quizzBrandAnswers, $unique_code)
+    {
+
+        if(is_object($quizzBrandAnswers) || is_array($quizzBrandAnswers))
+        {
+            $s1 = $quizzBrandAnswers['s1'];
+            $s2_option1 = (!empty($quizzBrandAnswers['s2_option1'])) ? $quizzBrandAnswers['s2_option1'] : NULL;
+            $s2_option2 = (!empty($quizzBrandAnswers['s2_option2'])) ? $quizzBrandAnswers['s2_option2'] : NULL;
+            $s2_option3 = (!empty($quizzBrandAnswers['s2_option3'])) ? $quizzBrandAnswers['s2_option3'] : NULL;
+            $s2_option4 = (!empty($quizzBrandAnswers['s2_option4'])) ? $quizzBrandAnswers['s2_option4'] : NULL;
+            $s2_option5 = (!empty($quizzBrandAnswers['s2_option5'])) ? $quizzBrandAnswers['s2_option5'] : NULL;
+            $s3_option1 = (!empty($quizzBrandAnswers['s3_option1'])) ? $quizzBrandAnswers['s3_option1'] : NULL;
+            $s3_option2 = (!empty($quizzBrandAnswers['s3_option2'])) ? $quizzBrandAnswers['s3_option2'] : NULL;
+            $s3_option3 = (!empty($quizzBrandAnswers['s3_option3'])) ? $quizzBrandAnswers['s3_option3'] : NULL;
+
+            $myQuery = "INSERT INTO quizz_brand_answers (
+                unique_code,
+                s1,
+                s2_option1,
+                s2_option2,
+                s2_option3,
+                s2_option4,
+                s2_option5,
+                s3_option1,
+                s3_option2,
+                s3_option3) VALUES (
+                '$unique_code',
+                '$s1',
+                '$s2_option1',
+                '$s2_option2',
+                '$s2_option3',
+                '$s2_option4',
+                '$s2_option5',
+                '$s3_option1',
+                '$s3_option2',
+                '$s3_option3');";
+
+            $result = mysqli_query($this->dbh, $myQuery);
+            if(!$result){
+            return "Error: " .mysqli_error($this->dbh);
+            }else{
+            return "good";
+            }
+
+        }
+    }
+
 
     function fetchQuestionsAndOptions()
     {
@@ -82,6 +129,33 @@ class mainClass extends DataBase{
         return $result;
     }
 
+    function fetchLastUserUniqueCode()
+    {
+        $myQuery = "SELECT unique_code FROM quizz_answers ORDER BY id DESC";
+        $result = mysqli_query($this->dbh, $myQuery);
+        return $result;
+    }
+
+    function fetchFirstSurvey()
+    {
+        $myQuery = "SELECT * FROM quizz_brand_questions WHERE id = 1";
+        $result = mysqli_query($this->dbh, $myQuery);
+        return $result;
+    }
+
+    function fetchSecondSurvey()
+    {
+        $myQuery = "SELECT * FROM quizz_brand_questions WHERE id = 2";
+        $result = mysqli_query($this->dbh, $myQuery);
+        return $result;
+    }
+
+    function fetchThirdSurvey()
+    {
+        $myQuery = "SELECT * FROM quizz_brand_questions WHERE id = 3";
+        $result = mysqli_query($this->dbh, $myQuery);
+        return $result;
+    }
 
     function updateResults($unique_code, $finalResult)
     {

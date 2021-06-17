@@ -9,7 +9,7 @@ if(isset($_POST['submit']) && $_POST['submit'] == 'Submit')
    $result = $mainPlug->saveQuizzInput($_POST, $unique_code);
    if(isset($result) && $result == 'good')
    {
-   header('Location: http://localhost/acaciaQuizApp/Results/index.php?code='.$unique_code);
+   header('Location: http://localhost/acaciaQuizApp/Survey/index.php?code='.$unique_code);
    // print_r($result);
    die();
    }else{
