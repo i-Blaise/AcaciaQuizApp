@@ -182,8 +182,18 @@ label{
     font-size: 16px;
     margin-left: 25px;
 }
+#prev {
+  position: absolute;
+  left: 25%;
+}
+#next {
+  position: absolute;
+  right: 25%;
+}
 #submit{
     width: 7.5%;
+    position: absolute;
+    right: 25%;
 }
 
 
