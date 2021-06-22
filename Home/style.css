@@ -397,9 +397,10 @@ a#menu-share:hover > i{
 	bottom:40px;
 	right:40px;
   left: auto;
-	background-color:#683191;
-	color:#FFF;
-	border-radius:50px;
+  border: 2px solid #683191;
+  background-color: #fff;
+  color: #683191;
+  border-radius: 10px;
 	text-align:center;
   text-decoration: none;
 	box-shadow: 2px 2px 3px #999;
