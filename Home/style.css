@@ -292,12 +292,13 @@ input {
 .float{
 	position:fixed;
 	width:150px;
-	height:60px;
+	height:45px;
 	bottom:40px;
 	left:130px;
-	background-color:#683191;
-	color:#FFF;
-	border-radius:50px;
+  border: 2px solid #683191;
+  background-color: #fff;
+  color: #683191;
+  border-radius: 10px;
 	text-align:center;
   text-decoration: none;
 	box-shadow: 2px 2px 3px #999;
@@ -311,9 +312,9 @@ i.fa.fa-share.my-float {
 
 ul{
 	position:fixed;
-  left: 60px;
-	padding-bottom:20px;
-	bottom:80px;
+  left: 80px;
+  padding-bottom: 20px;
+  bottom: 50px;
 	z-index:100;
 }
 
@@ -328,8 +329,8 @@ ul li a{
 	border-radius:50px;
 	text-align:center;
 	box-shadow: 2px 2px 3px #999;
-	width:60px;
-	height:60px;
+  width: 40px;
+  height: 40px;
 	display:block;
   margin-left: 10px;
 }
@@ -339,10 +340,13 @@ ul:hover{
 	opacity:1!important;
 }
 
+ul li a:hover{
+  opacity: .7;
+}
 
 .my-float{
-	font-size:24px;
-	margin-top:18px;
+  font-size: 16px;
+  margin-top: 14px;
 }
 
 a#menu-share + ul{
@@ -388,7 +392,7 @@ a#menu-share:hover > i{
 .float{
 	position:fixed;
 	width:150px;
-	height:60px;
+	height:45px;
 	bottom:40px;
 	right:40px;
   left: auto;
