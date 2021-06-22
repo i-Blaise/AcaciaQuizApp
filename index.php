@@ -34,10 +34,11 @@
        <div class="inner-wrapper">
            <div class="left-col_wrapper">
                <h2 class="left-col_h2">Take the quiz to find out <br> how healthy your lifestyle is. </h2>
-               <p class="left-col_p">The most assured way to ensure general wellness is by <br> the conscious effort and process of making everyday health choices<br> that promote good health.
-                Making decisions that improve your well-being boosts<br> the quality of your life and ensures a more fulfilling, healthy, and productive life. 
-                <br>At Acacia health insurance we offer great policies<br> to protect the well-being of those you love, and yourself.</p>
-               <a class="left-col_a" href="Quiz/">Start Quiz</a>
+               <p class="left-col_p">The most assured way to ensure general wellness is by the conscious effort and process of making everyday choices that promote good health. <br>
+Making decisions that improve your well-being boosts the quality of your life and ensures a more fulfilling, healthy, and productive life. <br>
+At Acacia Health Insurance, our aim is to be a key partner in your quest for health and wellness.
+Take the quiz to find out how healthy your lifestyle is. </p>
+               <a class="left-col_a" href="Quiz/">Click here to take the quiz</a>
            </div>
            <div class="right-col_wrapper">
                <div class="nav-link-pos">

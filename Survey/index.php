@@ -48,7 +48,7 @@ if(isset($_POST['submit']) && $_POST['submit'] == 'Submit')
 <body>
     <div id="svg_wrap"></div>
 
- <h1>You are almost done. <br> <span class="h1-child">We would like to know your take on a few brand-related questions.</span> </h1>
+ <h1 id="header">You are almost done! <br> <span class="h1-child">We would like to know your take on a few brand-related questions.</span> </h1>
  <form name="healthQuizz" onsubmit="return validateForm()" method="POST">
 
  <?php
@@ -94,8 +94,8 @@ $s2 = mysqli_fetch_array($result);
         <label for=""><?php echo $s2['option4']; ?></label>
     </div> 
     <div class="quiz_inner-wrapper">
-        <input type="checkbox" id="bent" name="s2_option5" value="<?php echo $s2['option5']; ?>"  /> 
         <label for=""><?php echo $s2['option5']; ?></label>
+        <input type="text" id="bent" name="s2_option5" value="" placehoslder="<?php echo $s2['option5']; ?>"  /> 
     </div>
     <span style="color: #332A86; font-size: 14px; opacity: 0.5;">(tick multiple boxes that applies to you) </span> 
    </section>
@@ -194,6 +194,7 @@ $(".button").click(function () {
   $("#svg_form_time circle").css("fill", active_color);
   var id = $(this).attr("id");
   if (id == "next") {
+    $("#header").addClass("disabled");
     $("#prev").removeClass("disabled");
     if (child >= length) {
       $(this).addClass("disabled");
