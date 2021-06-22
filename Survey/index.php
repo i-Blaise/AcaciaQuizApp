@@ -94,7 +94,7 @@ $s2 = mysqli_fetch_array($result);
         <label for=""><?php echo $s2['option4']; ?></label>
     </div> 
     <div class="quiz_inner-wrapper">
-        <label for=""><?php echo $s2['option5']; ?></label>
+        <label for=""><?php echo $s2['option5']; ?>:  </label>
         <input type="text" id="bent" name="s2_option5" value="" placehoslder="<?php echo $s2['option5']; ?>"  /> 
     </div>
     <span style="color: #332A86; font-size: 14px; opacity: 0.5;">(tick multiple boxes that applies to you) </span> 
