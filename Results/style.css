@@ -254,6 +254,12 @@ input[type="submit"]:hover{
 
 }
 
+@media (max-width: 400px){
+  .giphy-embed {
+    width: 300px;
+  }
+}
+
 @media (max-width: 767px){
     .inner-wrapper {
         display: flex;
