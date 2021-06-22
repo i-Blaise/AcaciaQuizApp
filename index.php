@@ -50,7 +50,14 @@ Take the quiz to find out how healthy your lifestyle is. </p>
                <div class="bottom-image_wrapper"><img class="bottom-image" src="Home/images/bottom-image.png" alt=""></div>
            </div>
        </div>
-       <footer></footer>
+       <div class="socials">
+        <a href="#" class="float" id="menu-share">Follow Us<i class="fa fa-share my-float"></i></a>
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook my-float"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus my-float"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter my-float"></i></a></li>
+        </ul>
+       </div>
    </section> 
 </body>
 </html>

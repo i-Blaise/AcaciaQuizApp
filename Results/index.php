@@ -177,29 +177,20 @@ if(isset($_GET['code']))
                 <div class="container">
                 <div class="row" >
                 <p class="center-col_p">
-                Follow our social media:
+                Follow our social media pages for more<br>information on our health policies and learn more ways to <br> improve your lifestyle and live a healthier happier life for yourself and your loved ones.
                 </p>
                 </div>
-    <div class="row" >
-    <div class="col-md-12" style="text-align:center;margin-left:50px;display:inline-flex;">
-
-        
-        <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>
-        
-        <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-instagram"><i class="fa fa-instagram"></i></a>
-        
-        <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-linkedin"><i class="fa fa-linkedin"></i></a>
-       
-        <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a>
-       
-    </div>
-
-
-</div>
-</div>
+                </div>
            </div>
        </div>
-
+       <div class="socials">
+        <a href="#" class="float" id="menu-share">Follow Us<i class="fa fa-share my-float"></i></a>
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook my-float"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram my-float"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter my-float"></i></a></li>
+        </ul>
+       </div>
        <footer></footer>
    </section> 
 </body>
