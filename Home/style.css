@@ -294,7 +294,7 @@ input {
 	width:150px;
 	height:60px;
 	bottom:40px;
-	right:40px;
+	left:130px;
 	background-color:#683191;
 	color:#FFF;
 	border-radius:50px;
@@ -311,7 +311,7 @@ i.fa.fa-share.my-float {
 
 ul{
 	position:fixed;
-	right:40px;
+  left: 60px;
 	padding-bottom:20px;
 	bottom:80px;
 	z-index:100;
@@ -381,4 +381,37 @@ a#menu-share:hover > i{
 @keyframes rotate-out {
     from {transform: rotate(360deg);}
     to {transform: rotate(0deg);}
+}
+
+/* Socials Mobile */
+@media (max-width: 767px){
+.float{
+	position:fixed;
+	width:150px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+  left: auto;
+	background-color:#683191;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  text-decoration: none;
+	box-shadow: 2px 2px 3px #999;
+	z-index:1000;
+	animation: bot-to-top 2s ease-out;
+}
+
+i.fa.fa-share.my-float {
+  padding-left: 10px;
+}
+
+ul{
+	position:fixed;
+  right:40px;
+  left: auto;
+	padding-bottom:20px;
+	bottom:80px;
+	z-index:100;
+}
 }
