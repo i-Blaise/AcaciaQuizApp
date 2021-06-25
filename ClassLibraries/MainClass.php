@@ -30,8 +30,6 @@ class mainClass extends DataBase{
             $q6 = $quizzAnswers['q6'];
             $q7 = $quizzAnswers['q7'];
             $q8 = $quizzAnswers['q8'];
-            $q9 = $quizzAnswers['q9'];
-            $q10 = $quizzAnswers['q10'];
 
             $myQuery = "INSERT INTO quizz_answers  (
                 unique_code,
@@ -42,9 +40,7 @@ class mainClass extends DataBase{
                 q5,
                 q6,
                 q7,
-                q8,
-                q9,
-                q10) VALUES (
+                q8) VALUES (
                 '$unique_code',
                 '$q1',
                 '$q2',
@@ -53,9 +49,7 @@ class mainClass extends DataBase{
                 '$q5',
                 '$q6',
                 '$q7',
-                '$q8',
-                '$q9',
-                '$q10')";
+                '$q8')";
 
             $result = mysqli_query($this->dbh, $myQuery);
             if(!$result){
@@ -255,11 +249,11 @@ class mainClass extends DataBase{
                                                 <tr><h2>These are the best answers to the Quiz Questions</h2></tr>
                                                 <tr>
                                                     <td style="width:260px;padding:0;vertical-align:top;color:#153643;">
-                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">1. Do you think exercises are relevant to general well-being?</p>
+                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">1. Do you think exercise is relevant to ones general well-being? </p>
                                                     </td>
                                                     <td style="width:20px;padding:0;font-size:0;line-height:0;">&nbsp;</td>
                                                     <td style="width:260px;padding:0;vertical-align:top;color:#153643;">
-                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">- Yes, to stay healthy one must keep fit <br>- Yes, I take walks as cardio </p>
+                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">- Yes, to stay healthy one must keep fit. </p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -267,11 +261,11 @@ class mainClass extends DataBase{
                                             <table role="presentation" style="width:100%;border-collapse:collapse;border-bottom:1px solid black;border-spacing:0;">
                                                 <tr>
                                                     <td style="width:260px;padding:0;vertical-align:top;color:#153643;">
-                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">2. What is your go to work out routine?</p>
+                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">2. What is your go-to work out routine?</p>
                                                     </td>
                                                     <td style="width:20px;padding:0;font-size:0;line-height:0;">&nbsp;</td>
                                                     <td style="width:260px;padding:0;vertical-align:top;color:#153643;">
-                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">- Jogs and different work out routines <br>- I have a gym membership, I don’t play </p>
+                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">- Vigorous routines (hiking, aerobics, jogging, running, cycling, soccer etc.) <br>- Moderate routines (walking briskly, cleaning heavily, tennis doubles, lap swimming etc.) <br>- Light routines (walking, dancing, yoga, etc.) </p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -283,7 +277,7 @@ class mainClass extends DataBase{
                                                     </td>
                                                     <td style="width:20px;padding:0;font-size:0;line-height:0;">&nbsp;</td>
                                                     <td style="width:260px;padding:0;vertical-align:top;color:#153643;">
-                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">- Solid 6/8 hours of sleep </p>
+                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">-  I get just the right amount of sleep. [7-9 hours] </p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -343,7 +337,7 @@ class mainClass extends DataBase{
                                                     </td>
                                                     <td style="width:20px;padding:0;font-size:0;line-height:0;">&nbsp;</td>
                                                     <td style="width:260px;padding:0;vertical-align:top;color:#153643;">
-                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">- Yes, I sit up right <br>- I view my work screens from calculated angles </p>
+                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">- Yes, I sit upright in a chair that supports my back. </p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -351,11 +345,11 @@ class mainClass extends DataBase{
                                             <table role="presentation" style="width:100%;border-collapse:collapse;border-bottom:1px solid black;border-spacing:0;">
                                                 <tr>
                                                     <td style="width:260px;padding:0;vertical-align:top;color:#153643;">
-                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">9. Do you pay attention to mental health and therapy? </p>
+                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">9. Do you think mental health is just as important as physical health?  </p>
                                                     </td>
                                                     <td style="width:20px;padding:0;font-size:0;line-height:0;">&nbsp;</td>
                                                     <td style="width:260px;padding:0;vertical-align:top;color:#153643;">
-                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">- Yes, and I have therapy sessions when necessary <br>- Yes, I meditate and do yoga </p>
+                                                        <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">- Yes, mental health and well-being is just as important as physical health. </p>
                                                     </td>
                                                 </tr>
                                             </table>

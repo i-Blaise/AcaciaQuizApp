@@ -140,7 +140,7 @@ body{
 }
 .left-col_p {
     color: #736BBE;
-    margin-right: 100px
+    margin-right: 100px;
 }
 
 .center-col_p {
@@ -255,7 +255,14 @@ input[type="submit"]:hover{
 
 }
 
-@media (max-width: 400px){
+@media (max-width: 480px){
+  .left-col_h2 {
+    width: 330px;
+  }
+  
+  .left-col_p {
+    width: 360px;
+}
   .giphy-embed {
     width: 300px;
   }
@@ -315,7 +322,7 @@ input[type="submit"]:hover{
 
 .float{
 	position:fixed;
-	width:150px;
+	width:170px;
 	height:60px;
 	bottom:40px;
 	right:40px;

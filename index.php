@@ -51,7 +51,7 @@ Take the quiz to find out how healthy your lifestyle is. </p>
            </div>
        </div>
        <div class="socials">
-        <a href="#" class="float" id="menu-share">Follow Us<i class="fa fa-share my-float"></i></a>
+        <a href="#" class="float" id="menu-share">Let's Get Social<i class="fa fa-share my-float"></i></a>
         <ul>
           <li><a href="https://web.facebook.com/acaciahealthinsurance" target="_blank"><i class="fa fa-facebook my-float"></i></a></li>
           <li><a href="https://www.instagram.com/acaciahealthinsurance/" target="_blank"><i class="fa fa-instagram my-float"></i></a></li>
