@@ -186,7 +186,7 @@ body::-webkit-scrollbar{
   flex-flow: column;
   align-items: flex-start;
   background: #56227d;
-  padding: 65px 80px;
+  padding: 40px 80px;
   text-align: left;
   border-radius: 20px;
 }
