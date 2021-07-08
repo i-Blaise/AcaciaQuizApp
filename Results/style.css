@@ -228,6 +228,7 @@ body::-webkit-scrollbar{
     padding: 20px;
     border: 1px solid #74578a;
     background: #74578a59;
+    color: #fff;
 }
 input::placeholder{
     font-family: 'Poppins', sans-serif;
