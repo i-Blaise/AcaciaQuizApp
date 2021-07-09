@@ -149,7 +149,7 @@ if(isset($_GET['code']))
           <?php } elseif(isset($finalResult) && $finalResult >= '50') {?>
             <h2 class="left-col_h2 animate__animated animate__lightSpeedInLeft">Your Score is <?php echo $finalResult ?>%! <br>
                 We admire your effort.</h2>
-               <p class="left-col_p animate__animated animate__lightSpeedInLeft">You're off to a great start as far as wellbeing goes,<br>learn more ways to improve on your health choices,<br>because healthy choices promote better living.</p>
+               <p class="left-col_p animate__animated animate__lightSpeedInLeft">You're off to a great start as far as wellbeing goes, learn more ways to improve on your health choices, because healthy choices promote better living.</p>
                <img class="gif-img animate__animated animate__lightSpeedInLeft" src="images/account-created.gif" alt="" width="450">
           <?php } elseif(isset($finalResult) && $finalResult >= '30') {?><h2 class="left-col_h2 animate__animated animate__lightSpeedInLeft">Your Score is <?php echo $finalResult ?>%! <br>
             Could be better!</h2>
