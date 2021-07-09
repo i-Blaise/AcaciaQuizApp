@@ -156,6 +156,7 @@ body::-webkit-scrollbar{
 }
 .left-col_p {
     color: #000000;
+    max-width: 450px;
 }
 
 .center-col_p {
