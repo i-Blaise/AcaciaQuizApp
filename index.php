@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="Home/style.css">
     <title>Live Healthy with Acacia </title>
 </head>
@@ -32,31 +33,22 @@
         </div>
       </div>
        <div class="inner-wrapper">
-           <div class="left-col_wrapper">
-               <h2 class="left-col_h2">Take the quiz to find out <br> how healthy your lifestyle is. </h2>
-               <p class="left-col_p">The most assured way to ensure general wellness is by the conscious effort and process of making everyday choices that promote good health. <br>
-Making decisions that improve your well-being boosts the quality of your life and ensures a more fulfilling, healthy, and productive life. <br>
-At Acacia Health Insurance, our aim is to be a key partner in your quest for health and wellness.
-Take the quiz to find out how healthy your lifestyle is. </p>
-               <a class="left-col_a" href="Quiz/">Click here to take the quiz</a>
+           <div class="left-col_wrapper animate__animated animate__lightSpeedInLeft">
+               <h2 class="left-col_h2">A good and healthy lifestyle begins with healthy choices and the decisions you make influence your general wellness. </h2>
+               <p class="left-col_p">It is also said that you are what you eat but that goes beyond just eating. What you do and even how you do things can affect your health as well. For example, the way you bend or sit can impact your wellbeing. </p>
+               <p class="left-col_p">At Acacia Health Insurance, our aim is to be a key partner in your quest for health and wellness. </p>
+               <p class="left-col_p">Take the quiz to find out how healthy your lifestyle is. Let’s go! </p>
+               <a class="left-col_a" href="Quiz/">Take the quiz</a>
            </div>
            <div class="right-col_wrapper">
                <div class="nav-link-pos">
                   <a href="#" target="_blank">Contact Us</a>
                   <a href="#" target="_blank">Help Center</a>
                </div>
-               <div class="dr-acacia_wrapper"><img class="dr-acacia" src="Home/images/dr_acacia 1.png" alt="" width="350"></div>
-               <div class="acacia-card_wrapper"><img class="acacia-card" src="Home/images/acacia-card.png" alt=""></div>
+               <div class="dr-acacia_wrapper "><img class="dr-acacia animate__animated animate__pulse animate__delay-1s animate__slower	3s animate__repeat-2" src="Home/images/dr_acacia 1.png" alt="" width="350"></div>
+               <div class="acacia-card_wrapper"><img class="acacia-card animate__animated animate__pulse animate__delay-1s animate__slower 3s animate__repeat-2" src="Home/images/acacia-card.png" alt=""></div>
                <div class="bottom-image_wrapper"><img class="bottom-image" src="Home/images/bottom-image.png" alt=""></div>
            </div>
-       </div>
-       <div class="socials">
-        <a href="#" class="float" id="menu-share">Let's Get Social<i class="fa fa-share my-float"></i></a>
-        <ul>
-          <li><a href="https://web.facebook.com/acaciahealthinsurance" target="_blank"><i class="fa fa-facebook my-float"></i></a></li>
-          <li><a href="https://www.instagram.com/acaciahealthinsurance/" target="_blank"><i class="fa fa-instagram my-float"></i></a></li>
-          <li><a href="https://twitter.com/acaciahealth2?s=21" target="_blank"><i class="fa fa-twitter my-float"></i></a></li>
-        </ul>
        </div>
    </section> 
 </body>
