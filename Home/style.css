@@ -116,6 +116,7 @@ body{
       width: 83%;
       padding: 25px 34px 0px;
       font-size: 24px;
+      color: #332A86;
   }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
