@@ -31,18 +31,28 @@ body{
     display: none;
   }
   
-  .nav > .nav-links {
+  /* .nav > .nav-links {
     display: inline;
     float: right;
     font-size: 14px;
     margin-right: 6.5rem;
-  }
+  } */
+
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 14px;
+    margin-right: 0;
+    background: #683191;
+    height: 200px;
+    width: 34.3vw;
+}
   
   .nav > .nav-links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: #F3534A;
+    color: #ffffff;
   }
   
   .nav > .nav-links > a:hover {
