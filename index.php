@@ -27,9 +27,10 @@
           </label>
         </div>
         <div class="nav-links">
-          <a href="#" target="_blank">Contact Us</a>
-          <a href="#" target="_blank">Help Center</a>
+          <a href="https://ahighana.com/contact-us.php" target="_blank">Contact Us</a>
+          <a href="https://ahighana.com/faq.php" target="_blank">Help Center</a>
         </div>
+      
       </div>
        <div class="inner-wrapper">
            <div class="left-col_wrapper">
@@ -42,8 +43,8 @@ Take the quiz to find out how healthy your lifestyle is. </p>
            </div>
            <div class="right-col_wrapper">
                <div class="nav-link-pos">
-                  <a href="#" target="_blank">Contact Us</a>
-                  <a href="#" target="_blank">Help Center</a>
+                  <a href="https://ahighana.com/contact-us.php" target="_blank">Contact Us</a>
+                  <a href="https://ahighana.com/faq.php" target="_blank">Help Center</a>
                </div>
                <div class="dr-acacia_wrapper"><img class="dr-acacia" src="Home/images/dr_acacia 1.png" alt="" width="350"></div>
                <div class="acacia-card_wrapper"><img class="acacia-card" src="Home/images/acacia-card.png" alt=""></div>

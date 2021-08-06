@@ -12,8 +12,8 @@ if(isset($_GET['code']))
     $row = mysqli_fetch_array($result);
       $sumResult = $row['q1']+$row['q2']+$row['q3']+$row['q4']+$row['q5']+$row['q6']+$row['q7']+$row['q8'];
       $rawResult = $sumResult/16 * 100;
-      // $finalResult = round($rawResult, 0);
-      $finalResult = 70;
+      $finalResult = round($rawResult, 0);
+      // $finalResult = 27;
       
   $resultUpdate = $mainPlug->updateResults($unique_code, $finalResult);
   if($resultUpdate != 'good')
@@ -134,8 +134,8 @@ if(isset($_GET['code']))
           </label>
         </div>
         <div class="nav-links">
-          <a href="#" target="_blank">Contact Us</a>
-          <a href="#" target="_blank">Help Center</a>
+          <a href="https://ahighana.com/contact-us.php" target="_blank">Contact Us</a>
+          <a href="https://ahighana.com/faq.php" target="_blank">Help Center</a>
         </div>
       </div>
        <div class="inner-wrapper">
@@ -178,14 +178,13 @@ if(isset($_GET['code']))
                   your loved ones
                 </p>
                 <div class="social-wrapper">
-                  <a class="social-icon" href="#"><img src="images/facebook-brands.svg" alt="" width="60"></a>
-                  <a class="social-icon" href="#"><img src="images/instagram-brands.svg" alt="" width="60"></a>
-                  <a class="social-icon" href="#"><img src="images/twitter-brands.svg" alt="" width="60"></a>
-                  <a class="social-icon" href="#"><img src="images/youtube-brands.svg" alt="" width="60"></a>
+                  <a class="social-icon" target="_blank" href="https://web.facebook.com/acaciahealthinsurance"><img src="images/facebook-brands.svg" alt="" width="60"></a>
+                  <a class="social-icon" target="_blank" href="https://www.instagram.com/acaciahealthinsurance/"><img src="images/instagram-brands.svg" alt="" width="60"></a>
+                  <a class="social-icon" target="_blank" href="https://twitter.com/acaciahealth2?s=21"><img src="images/twitter-brands.svg" alt="" width="60"></a>
                 </div>
                 <div class="web-mess">
                   <p>To learn more about Acacia Health Insurance</p>
-                  <a href="">Click here.</a>
+                  <a href="https://ahighana.com/">Click here.</a>
                 </div>
                 </div>
                 </div>
