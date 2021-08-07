@@ -116,6 +116,7 @@ margin-top:0;
     margin-bottom: 30px;
     opacity: 0.5;
 }
+
 input[type="radio"] {
   transform: scale(.7);
   appearance: none;
