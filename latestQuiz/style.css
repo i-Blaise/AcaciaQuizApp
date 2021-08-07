@@ -179,25 +179,3 @@ input[type=button], button {
     
   }
   
-  /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
-    h2 {
-        font-size: 24px;
-    }
-    span.btn {
-        font-size: 16px;
-    }
-    input.next.action-button, .next {
-        position: absolute!important;
-        left: 60%!important;
-    }
-    #msform {
-        height: 100vh;
-    }
-
-  }
