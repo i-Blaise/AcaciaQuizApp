@@ -21,8 +21,8 @@ body {
     margin-top: 90px;
 }
 fieldset {
-    width: 50vw;
-    height: 500px;
+    width: 55vw;
+    height: 475px;
     background: #fff;
     border: 0;
     border-radius: 15px;
@@ -30,7 +30,7 @@ fieldset {
 }
 h2 {
     color: #683191;
-    font-size: 36px;
+    font-size: 34px;
     animation: fadeInLeft;
     animation-duration: 1s;
 }
@@ -39,7 +39,7 @@ h2 {
     animation-duration: 1s;
 }
 span.btn {
-    font-size: 18px;
+    font-size: 16px;
     color: #683191;
 }
 .btns {
@@ -126,3 +126,78 @@ input[type=button], button {
     animation-duration: 6s; /* don't forget to set a duration! */
   --animate-delay: 6s;
 }
+
+/* Mobile Css */
+@media (max-width: 767px) {
+    fieldset {
+        width: 80vw;
+        height: 550px;
+        padding: 30px 30px;
+        margin-bottom: 40px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    span.btn {
+        font-size: 16px;
+    }
+    input.next.action-button, .next {
+        position: absolute!important;
+        left: 60%!important;
+    }
+    #msform {
+        height: 100vh;
+    }
+  }
+  
+  /* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    fieldset {
+        width: 80vw;
+        height: 550px;
+        padding: 30px 30px;
+        margin-bottom: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    span.btn {
+        font-size: 16px;
+    }
+    input.next.action-button, .next {
+        position: absolute!important;
+        left: 74%!important;
+    }
+    #msform {
+        height: 100vh;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    h2 {
+        font-size: 24px;
+    }
+    span.btn {
+        font-size: 16px;
+    }
+    input.next.action-button, .next {
+        position: absolute!important;
+        left: 60%!important;
+    }
+    #msform {
+        height: 100vh;
+    }
+
+  }
