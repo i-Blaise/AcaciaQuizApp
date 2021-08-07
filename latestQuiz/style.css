@@ -123,6 +123,6 @@ input[type=button], button {
     font-weight: 600;
     color: #683191;
     animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 4s; /* don't forget to set a duration! */
+    animation-duration: 6s; /* don't forget to set a duration! */
   --animate-delay: 6s;
 }
