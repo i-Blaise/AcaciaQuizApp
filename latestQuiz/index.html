@@ -5,16 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   </head>
     <body>
         <form id="msform" method="POST" action="abc.php">
            <!-- progressbar -->
            <ul id="progressbar">
-              <li>Step1</li>
-              <li>Step2</li>
-              <li>Step3</li>
+              <li>Q1</li>
+              <li>Q2</li>
+              <li>Q3</li>
+              <li>Q4</li>
+              <li>Q5</li>
+              <li>Q6</li>
+              <li>Q7</li>
+              <li>Q8</li>
+              <li>Q9</li>
            </ul>
            
            <!-- error messages -->
@@ -65,7 +72,7 @@
                  <div class="col-md-6 my-2">
                     <div class='btns'>
                        <label>
-                       <input name="event" type='radio'>
+                       <input name="q2" type='radio'>
                        <span class='btn first'>Go hard (hiking, aerobics, jogging, running, cycling, weightlifting, etc.)</span>
                        </label>
                     </div>
@@ -73,7 +80,7 @@
                  <div class="col-md-6 my-2">
                     <div class='btns'>
                        <label>
-                       <input name="event" type='radio'>
+                       <input name="q2" type='radio'>
                        <span class='btn'>Sweat enough (brisk walks, heavy cleaning, tennis doubles, lap swimming etc.)</span>
                        </label>
                     </div>
@@ -81,7 +88,7 @@
                  <div class="col-md-6 my-2">
                     <div class='btns'>
                        <label>
-                       <input name="event" type='radio'>
+                       <input name="q2" type='radio'>
                        <span class='btn'>I take it easy (walking, dancing, yoga, etc.)</span>
                        </label>
                     </div>
@@ -89,7 +96,7 @@
                  <div class="col-md-6 my-2">
                     <div class='btns'>
                        <label>
-                       <input name="event" type='radio'>
+                       <input name="q2" type='radio'>
                        <span class='btn'>Not for me. I’ll pass. </span>
                        </label>
                     </div>
@@ -98,9 +105,48 @@
               <input type="button" name="previous" class="previous action-button" value="&larr; Previous" />
               <input type="button" name="next" class="next action-button" value="NEXT" />
            </fieldset>
+           <fieldset>
+            <h2 class="q1-type">To exercise my brain, I...</h2>
+            <div class="row">
+               <div class="col-md-6 my-2">
+                  <div class='btns'>
+                     <label>
+                     <input name="q3" type='radio'>
+                     <span class='btn first'>Read or play lots of games, puzzles, and quizzes</span>
+                     </label>
+                  </div>
+               </div>
+               <div class="col-md-6 my-2">
+                  <div class='btns'>
+                     <label>
+                     <input name="q3" type='radio'>
+                     <span class='btn'>Listen to music and/or dance</span>
+                     </label>
+                  </div>
+               </div>
+               <div class="col-md-6 my-2">
+                  <div class='btns'>
+                     <label>
+                     <input name="q3" type='radio'>
+                     <span class='btn'>Sleep </span>
+                     </label>
+                  </div>
+               </div>
+               <div class="col-md-6 my-2">
+                  <div class='btns'>
+                     <label>
+                     <input name="q3" type='radio'>
+                     <span class='btn'>Don't intentionally exercise my brain  </span>
+                     </label>
+                  </div>
+               </div>
+            </div>
+            <input type="button" name="previous" class="previous action-button" value="&larr; Previous" />
+            <input type="button" name="next" class="next action-button" value="NEXT" />
+         </fieldset>
            <!-- <fieldset>
               <h5 class="concierge-mobile desktop-view">Celeb Concierge</h5>
-              <h2 class="q1-type">Type of Event</h2>
+              <h2 class="q1-type">Type of q2</h2>
               <div class="row">
                  <div class="col-md-12 my-2">
                     <h6 class="budget">Budget</h6>
@@ -112,19 +158,19 @@
                     </div>
                  </div>
                  <div class="col-md-6 my-2">
-                    <input type="text" name="location" id="location" class="event-details" placeholder="Event Location" />
+                    <input type="text" name="location" id="location" class="q2-details" placeholder="q2 Location" />
                  </div>
                  <div class="col-md-6 my-2">
-                    <input type="text" name="date" id="date" class="event-details" placeholder="Event Date" />
+                    <input type="text" name="date" id="date" class="q2-details" placeholder="q2 Date" />
                  </div>
                  <div class="col-md-6 my-2">
-                    <input type="text" name="name" id="name" class="event-details" placeholder="Name" />
+                    <input type="text" name="name" id="name" class="q2-details" placeholder="Name" />
                  </div>
                  <div class="col-md-6 my-2">
-                    <input type="text" name="email" id="email" class="event-details" placeholder="Email Id" />
+                    <input type="text" name="email" id="email" class="q2-details" placeholder="Email Id" />
                  </div>
                  <div class="col-md-6 my-2">
-                    <input type="text" name="phone" id="phone" class="event-details" placeholder="Phone Number" />
+                    <input type="text" name="phone" id="phone" class="q2-details" placeholder="Phone Number" />
                  </div>
               </div>
               <input type="button" name="previous" class="previous action-button" value="Previous" />
@@ -135,13 +181,13 @@
     <script>
         $(document).ready(function() {
           
-          $(".next").click(function(event) {
+          $(".next").click(function(q2) {
             var current_index = $(this).parent().index("fieldset");
             
             if(validateStep(current_index)){
                 makeStepActive(current_index+1);
             }else{
-                event.preventDefault();
+                q2.prq2Default();
             }
           });
 
@@ -175,7 +221,7 @@
                     return true;
                 break;
                 case 1:
-                    if(($("input[name='event']:checked").length === 0)){
+                    if(($("input[name='q2']:checked").length === 0)){
                         alert('Please select an answer to proceed!');
                         return false;
                     }
