@@ -5,7 +5,7 @@ $testDBcon = new mainClass();
 
 
 
-$result = $testDBcon->fetchFirstSurvey();
+$result = $testDBcon->fetchQuestionsAndOptionsNum();
 // $result = $testDBcon->updateResults($unique_code, $finalResult);
 // $row = json_encode($result);
 // foreach ($result as $port) 
@@ -17,9 +17,9 @@ $result = $testDBcon->fetchFirstSurvey();
 //     echo $row['unique_code'];
 
 // }
-// echo $result;
-$row = mysqli_fetch_array($result);
-echo $row['question'];
+echo $result;
+// $row = mysqli_fetch_array($result);
+// echo $row['question'];
 // print_r($row);
 // var_dump($result);
 ?>

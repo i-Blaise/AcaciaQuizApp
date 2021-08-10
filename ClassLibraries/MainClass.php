@@ -30,6 +30,7 @@ class mainClass extends DataBase{
             $q6 = $quizzAnswers['q6'];
             $q7 = $quizzAnswers['q7'];
             $q8 = $quizzAnswers['q8'];
+            $q9 = $quizzAnswers['q9'];
 
             $myQuery = "INSERT INTO quizz_answers  (
                 unique_code,
@@ -40,7 +41,8 @@ class mainClass extends DataBase{
                 q5,
                 q6,
                 q7,
-                q8) VALUES (
+                q8,
+                q9) VALUES (
                 '$unique_code',
                 '$q1',
                 '$q2',
@@ -49,7 +51,8 @@ class mainClass extends DataBase{
                 '$q5',
                 '$q6',
                 '$q7',
-                '$q8')";
+                '$q8',
+                '$q9')";
 
             $result = mysqli_query($this->dbh, $myQuery);
             if(!$result){

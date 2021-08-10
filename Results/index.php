@@ -6,12 +6,12 @@ $mainPlug = new mainClass();
 
 if(isset($_GET['code']))
 {
-  $emailSent = false;
+  // $emailSent = false;
   $unique_code = $_GET['code'];
   $result = $mainPlug->fetchAnswersWithCode($unique_code);
     $row = mysqli_fetch_array($result);
-      $sumResult = $row['q1']+$row['q2']+$row['q3']+$row['q4']+$row['q5']+$row['q6']+$row['q7']+$row['q8'];
-      $rawResult = $sumResult/16 * 100;
+      $sumResult = $row['q1']+$row['q2']+$row['q3']+$row['q4']+$row['q5']+$row['q6']+$row['q7']+$row['q8']+$row['q9'];
+      $rawResult = $sumResult/18 * 100;
       $finalResult = round($rawResult, 0);
       // $finalResult = 27;
       
@@ -24,21 +24,26 @@ if(isset($_GET['code']))
   }
 
   if(isset($finalResult) && $finalResult >= '70') {
-  $scoreHeader = "Your Score is ".$finalResult."%!! You are a champ!";
-  $scoreMessage = "We admire your dedication to your well-being; <br> you make conscious choices to ensure you're in good health. <br>We encourage you to keep up the great work maintaining healthy lifestyles that promote healthy living.";
-
-  }elseif(isset($finalResult) && $finalResult >= '50') {
-  $scoreHeader = "Your Score is ".$finalResult."%! We admire your effort!";
-  $scoreMessage = "You're off to a great start as far as wellbeing goes, <br> learn more ways to improve on your health choices, <br> because healthy choices promote better living.";
-
-  } elseif(isset($finalResult) && $finalResult >= '30') {
-  $scoreHeader = "Your Score is ".$finalResult."%! Could be better!";
-  $scoreMessage = "Practice more ways to ensure healthy living, get more in touch with your <br>health with the consciousness that deliberate healthy choices promote healthy living. <br>Be more deliberate.";
-
-  } elseif(isset($finalResult) && $finalResult < '30') {
-  $scoreHeader = "Your Score is ".$finalResult."%! You could still make it!";
-  $scoreMessage = "Did you know that your everyday choices determine and influence the outcome of your health? <br>We create and sustain general wellness by making well informed decisions regarding our health and lifestyles.<br> So, we encourage you, to get that meal plan, choose achievable cardio routines, <br>get that membership, or find out ways you can improve your lifestyle that bests suit you. <br>Remember to start small.";
-  }
+    $scoreHeader = "Your Score is ".$finalResult."%!! Wow! You’re one healthy champ!";
+    $scoreMessage = "You are very intentional about your health choices and your great results show you're in good health. We admire your dedication to your well-being. Keep up the great work maintaining a very healthy lifestyle.";
+    $gif = "images/account-created.gif";
+  
+    }elseif(isset($finalResult) && $finalResult >= '50') {
+    $scoreHeader = "Your Score is ".$finalResult."%! Kudos! You’re doing well!";
+    $scoreMessage = "You are off to a great start as far as well-being goes and we admire your effort. Learn more ways to improve on your health choices because healthy choices promote better living.";
+    $gif = "https://cdn.dribbble.com/users/1341046/screenshots/14019996/media/83e7d4b66d9a5d888636b19bfd79abbb.gif";
+  
+    } elseif(isset($finalResult) && $finalResult >= '30') {
+    $scoreHeader = "Your Score is ".$finalResult."%! Could be better!";
+    $scoreMessage = "Practice more ways to ensure healthy living. Take the standard set of wholesome meals. Get just the right amount of rest and exercise. Be more deliberate about your lifestyle choices so you can live much healthier.";
+    $gif = "https://cdn.dribbble.com/users/2422127/screenshots/6609950/ezgif.com-resize__5_.gif";
+  
+    } elseif(isset($finalResult) && $finalResult < '30') {
+    $scoreHeader = "Your Score is ".$finalResult."%! You can still make it!";
+    $scoreMessage = "Did you know that your everyday choices determine and influence your health? 
+    You can improve and sustain general wellness by starting with these tips. We encourage you to get that meal plan, choose achievable cardio routines, get enough sleep or find a healthy lifestyle that best suits you. Remember to start small.";
+    $gif = "https://cdn.dribbble.com/users/933425/screenshots/6475835/comp_2.gif";
+    }
 
 
 
@@ -67,9 +72,7 @@ if(isset($_GET['code']))
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-
-
-
+    <link rel="stylesheet" href="popup.css" />
 
           <!-- Notification -->
     <!-- jQuery -->
@@ -78,19 +81,17 @@ if(isset($_GET['code']))
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <title>Live Healthy with Acacia </title>
-</head>
 
 
-
-
-<?php
-  if(isset($_POST['submit']) && $_POST['submit'] == 'Send Results To My Email')
+    <?php
+  if(isset($_POST['submit']) && $_POST['submit'] == 'Send results')
   {
     if(isset($_POST['email']))
     {
       $email = $_POST['email'];
-  
-      $emailResult = $mainPlug->sendEmail($email, $scoreHeader, $scoreMessage);
+
+      $emailResult = "not ready";
+      // $emailResult = $mainPlug->sendEmail($email, $scoreHeader, $scoreMessage);
       if($emailResult == 'sent')
       {
         ?>
@@ -109,14 +110,32 @@ if(isset($_GET['code']))
        
          <?php
       }else{
-        print_r($emailResult);
-        die();
+
+        ?>
+          <!-- Notification -->
+          
+  <script src="redirect_history.js"></script>
+  
+       <script type='text/javascript'>   
+      $(document).ready(function() {      
+      toastr.options.positionClass = "toast-top-right";
+      toastr.options.closeButton = true;
+      toastr.options.closeDuration = 300;
+      toastr.error('There was an issue here, please try again later', 'Oops');
+  });
+  </script>
+       
+         <?php
+        // print_r($emailResult);
+        // die();
       }
     }
   }
 ?>
 
 
+
+</head>
 <body>
    <section id="main-wrapper">
     <div class="nav animate__animated animate__slideInDown">
@@ -125,7 +144,7 @@ if(isset($_GET['code']))
             <a class="nav-title" href="#">
             <img src="images/acacia.png" alt="" width="200">
           </a>
-        </div>
+        </div>  
         <div class="nav-btn">
           <label for="nav-check">
             <span></span>
@@ -141,46 +160,21 @@ if(isset($_GET['code']))
        <div class="inner-wrapper">
         <div class="left-col_wrapper">
           <h3 class="left-col_h3 animate__animated animate__lightSpeedInLeft">Your Quiz Results!</h3>
-          <?php if(isset($finalResult) && $finalResult >= '70') {?>
-               <h2 class="left-col_h2 animate__animated animate__lightSpeedInLeft">Your Score is <?php echo $finalResult ?>%! <br>
-               You’re a champ!</h2>
-               <p class="left-col_p animate__animated animate__lightSpeedInLeft">We admire your dedication to your well-being;  you make conscious choices to ensure you're in good health. We encourage you to keep up the great work maintaining healthy lifestyles that promote healthy living.</p>
-               <img class="gif-img animate__animated animate__lightSpeedInLeft" src="images/account-created.gif" alt="" width="450">
-          <?php } elseif(isset($finalResult) && $finalResult >= '50') {?>
-            <h2 class="left-col_h2 animate__animated animate__lightSpeedInLeft">Your Score is <?php echo $finalResult ?>%! <br>
-                We admire your effort.</h2>
-               <p class="left-col_p animate__animated animate__lightSpeedInLeft">You're off to a great start as far as wellbeing goes, learn more ways to improve on your health choices, because healthy choices promote better living.</p>
-               <img class="gif-img animate__animated animate__lightSpeedInLeft" src="images/account-created.gif" alt="" width="450">
-          <?php } elseif(isset($finalResult) && $finalResult >= '30') {?><h2 class="left-col_h2 animate__animated animate__lightSpeedInLeft">Your Score is <?php echo $finalResult ?>%! <br>
-            Could be better!</h2>
-               <p class="left-col_p animate__animated animate__lightSpeedInLeft">Practice more ways to ensure healthy living, get more in touch with your health with the consciousness that deliberate healthy choices promote healthy living. Be more deliberate.</p>
-               <img class="gif-img animate__animated animate__lightSpeedInLeft" src="images/account-created.gif" alt="" width="450">
-          <?php } elseif(isset($finalResult) && $finalResult < '30') {?><h2 class="left-col_h2 animate__animated animate__lightSpeedInLeft">Your Score is <?php echo $finalResult ?>%! <br>
-            You could still make it!</h2>
-               <p class="left-col_p animate__animated animate__lightSpeedInLeft">Did you know that your everyday choices determine and influence the outcome of your health? We create and sustain general wellness by making well informed decisions regarding our health and lifestyles. So, we encourage you, to get that meal plan, choose achievable cardio routines, get that membership, or find out ways you can improve your lifestyle that bests suit you. Remember to start small.</p>
-               <img class="gif-img animate__animated animate__lightSpeedInLeft" src="images/account-created.gif" alt="" width="450">
-          <?php } ?>
+               <h2 class="left-col_h2 animate__animated animate__lightSpeedInLeft"><?php echo $scoreHeader  ?></h2>
+               <p class="left-col_p animate__animated animate__lightSpeedInLeft"><?php echo $scoreMessage  ?></p>
+               <img class="gif-img animate__animated animate__lightSpeedInLeft" src="<?php echo $gif  ?>" alt="" width="450">
               </div>
               <div class="right-col_wrapper animate__animated animate__slideInRight">
-               <h3 class="right-col_h3">Ready to see which areas of your health to improve?</h3>
-                <form id="results-form" method="POST" action="">
-                     <input type="email" id="email" name="email" placeholder="Enter your email">
-                    <input type="submit" id="submit" name="submit" value="Send results">
-                    <!-- <p class="c-ryt">By clicking the button above, you are creating an account with Acacia and agree to our <a href="">Privacy Policy</a> and <a href="">Terms of Use</a>, including receiving emails.</p> -->
-                </form>
                 <div class="container">
                 <div class="row" >
-                  <h3 class="right-col_h3">Take a minute to ....</h3>
+                <h3 class="right-col_h3">Take a minute to ....</h3>
                 <p class="center-col_p">
-                  Follow our social media pages for more information on <br>
-                  our health policies and learn more ways to improve your <br>
-                  lifestyle and live a healthier happier life for yourself and <br>
-                  your loved ones
+                  Follow our social media pages for more information on our health policies and learn more ways to improve your lifestyle and live a healthier happier life for yourself and your loved ones.
                 </p>
                 <div class="social-wrapper">
-                  <a class="social-icon" target="_blank" href="https://web.facebook.com/acaciahealthinsurance"><img src="images/facebook-brands.svg" alt="" width="60"></a>
-                  <a class="social-icon" target="_blank" href="https://www.instagram.com/acaciahealthinsurance/"><img src="images/instagram-brands.svg" alt="" width="60"></a>
-                  <a class="social-icon" target="_blank" href="https://twitter.com/acaciahealth2?s=21"><img src="images/twitter-brands.svg" alt="" width="60"></a>
+                  <a class="social-icon" href="https://web.facebook.com/acaciahealthinsurance"><img src="images/facebook-brands.svg" alt="" width="60"></a>
+                  <a class="social-icon" href="https://www.instagram.com/acaciahealthinsurance/"><img src="images/instagram-brands.svg" alt="" width="60"></a>
+                  <a class="social-icon" href="https://twitter.com/acaciahealth2?s=21"><img src="images/twitter-brands.svg" alt="" width="60"></a>
                 </div>
                 <div class="web-mess">
                   <p>To learn more about Acacia Health Insurance</p>
@@ -188,8 +182,34 @@ if(isset($_GET['code']))
                 </div>
                 </div>
                 </div>
+                <h3 class="right-col_h3">Ready to see which areas of your health to improve?</h3>
+                <form id="results-form" method="POST" action="">
+                     <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <input type="submit" id="submit" name="submit" value="Send results">
+                </form>
+                <p class="c-ryt"> <span style="color:#fff; font-weight: 500;">Disclaimer :</span> The results of this quiz is not medical proof of your health status but merely to give you a sense of how healthy your lifestyle is. You should make it a point to visit a medical centre regularly for a proper health check.</p>
            </div>
        </div>
+       <div class="exit-intent-popup">
+        <div class="newsletter">
+          <h3 class="right-col_h3">Let’s get social. </h3>
+          <p class="center-col_p">
+            Follow us for useful health related content tailored for the corporate worker.
+          </p>
+          <div class="social-wrapper">
+            <a class="social-icon" href="https://web.facebook.com/acaciahealthinsurance"><img src="images/facebook-brands.svg" alt="" width="60"></a>
+            <a class="social-icon" href="https://www.instagram.com/acaciahealthinsurance/"><img src="images/instagram-brands.svg" alt="" width="60"></a>
+            <a class="social-icon" href="https://twitter.com/acaciahealth2?s=21"><img src="images/twitter-brands.svg" alt="" width="60"></a>
+          </div>
+          <div class="web-mess">
+            <p>To learn more about Acacia Health Insurance</p>
+            <a href="https://ahighana.com/">Click here.</a>
+          </div>
+            <span class="close">x</span>
+        </div>
+    </div>
    </section> 
+   <script src="CookieService.js"></script>
+   <script src="popup.js"></script>
 </body>
 </html>
