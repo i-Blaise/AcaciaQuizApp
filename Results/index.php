@@ -141,7 +141,7 @@ if(isset($_GET['code']))
     <div class="nav animate__animated animate__slideInDown">
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
-            <a class="nav-title" href="#">
+            <a class="nav-title" href="https://ahighana.com/quiz">
             <img src="images/acacia.png" alt="" width="200">
           </a>
         </div>  
@@ -172,9 +172,9 @@ if(isset($_GET['code']))
                   Follow our social media pages for more information on our health policies and learn more ways to improve your lifestyle and live a healthier happier life for yourself and your loved ones.
                 </p>
                 <div class="social-wrapper">
-                  <a class="social-icon" href="https://web.facebook.com/acaciahealthinsurance"><img src="images/facebook-brands.svg" alt="" width="60"></a>
-                  <a class="social-icon" href="https://www.instagram.com/acaciahealthinsurance/"><img src="images/instagram-brands.svg" alt="" width="60"></a>
-                  <a class="social-icon" href="https://twitter.com/acaciahealth2?s=21"><img src="images/twitter-brands.svg" alt="" width="60"></a>
+                  <a class="social-icon" target="_blank" href="https://web.facebook.com/acaciahealthinsurance"><img src="images/facebook-brands.svg" alt="" width="60"></a>
+                  <a class="social-icon" target="_blank" href="https://www.instagram.com/acaciahealthinsurance/"><img src="images/instagram-brands.svg" alt="" width="60"></a>
+                  <a class="social-icon" target="_blank" href="https://twitter.com/acaciahealth2?s=21"><img src="images/twitter-brands.svg" alt="" width="60"></a>
                 </div>
                 <div class="web-mess">
                   <p>To learn more about Acacia Health Insurance</p>
