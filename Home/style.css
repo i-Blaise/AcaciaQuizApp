@@ -173,6 +173,9 @@ body{
   width: 40vw;
   background: #683191;;
 }
+.acacia-card {
+  width: 350px;
+}
 .dr-acacia{
   position: absolute;
   top: 150px;
@@ -187,7 +190,7 @@ body{
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 350px;
+  width: 250px;
 }
 
 
@@ -257,7 +260,7 @@ input {
     position: relative;
     bottom: 0;
     right: 0;
-    max-width: 350px;
+    max-width: 250px;
     width: auto;
   }
   .acacia-card {
@@ -324,7 +327,7 @@ input {
     position: relative;
     bottom: 0;
     right: 0;
-    max-width: 350px;
+    max-width: 250px;
     width: auto;
   }
   .acacia-card {

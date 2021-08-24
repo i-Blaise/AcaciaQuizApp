@@ -164,9 +164,9 @@ if(isset($_GET['code']))
 
                <div style="margin-right: 2px;">
                <p class="left-col_p animate__animated animate__lightSpeedInLeft"><?php echo $scoreMessage  ?>
-               <a class="social-icontext" target="_blank" href="https://web.facebook.com/acaciahealthinsurance"><img style="filter: initial;" src="images/facebook-brands.svg" alt="" width="25"></a>
+               <!-- <a class="social-icontext" target="_blank" href="https://web.facebook.com/acaciahealthinsurance"><img style="filter: initial;" src="images/facebook-brands.svg" alt="" width="25"></a>
                <a class="social-icontext" target="_blank" href="https://www.instagram.com/acaciahealthinsurance/"><img style="filter: initial;" src="images/instagram-brands.svg" alt="" width="25"></a>
-               <a class="social-icontext" target="_blank" href="https://twitter.com/acaciahealth2?s=21"><img style="filter: initial;" src="images/twitter-brands.svg" alt="" width="25"></a>
+               <a class="social-icontext" target="_blank" href="https://twitter.com/acaciahealth2?s=21"><img style="filter: initial;" src="images/twitter-brands.svg" alt="" width="25"></a> -->
                </p>
                </div>
 
@@ -184,15 +184,6 @@ if(isset($_GET['code']))
               <div class="right-col_wrapper animate__animated animate__slideInRight">
                 <div class="container">
                 <div class="row" >
-                <!-- <h3 class="right-col_h3">Take a minute to ....</h3>
-                <p class="center-col_p">
-                  Follow our social media pages for more information on our health policies and learn more ways to improve your lifestyle and live a healthier happier life for yourself and your loved ones.
-                </p>
-                <div class="social-wrapper">
-                  <a class="social-icon" href="https://web.facebook.com/acaciahealthinsurance"><img src="images/facebook-brands.svg" alt="" width="60"></a>
-                  <a class="social-icon" href="https://www.instagram.com/acaciahealthinsurance/"><img src="images/instagram-brands.svg" alt="" width="60"></a>
-                  <a class="social-icon" href="https://twitter.com/acaciahealth2?s=21"><img src="images/twitter-brands.svg" alt="" width="60"></a>
-                </div> -->
                 <div class="web-mess">
                   <p>To learn more about Acacia Health Insurance</p>
                   <a href="https://ahighana.com/">Click here.</a>
