@@ -24,22 +24,22 @@ if(isset($_GET['code']))
   }
 
   if(isset($finalResult) && $finalResult >= '70') {
-    $scoreHeader = "Your Score is ".$finalResult."%!! Wow! You’re one healthy champ!";
-    $scoreMessage = "You are very intentional about your health choices and your great results show you're in good health. We admire your dedication to your well-being. Keep up the great work maintaining a very healthy lifestyle.";
+    $scoreHeader = "You scored ".$finalResult.". Wow! You’re one healthy champ!";
+    $scoreMessage = "You’re very intentional about your habits and your great results could mean you’re in good health. We admire your dedication to health and wellness. Keep it up! Follow our social media pages for more health and wellness tips.";
     $gif = "images/account-created.gif";
   
     }elseif(isset($finalResult) && $finalResult >= '50') {
-    $scoreHeader = "Your Score is ".$finalResult."%! Kudos! You’re doing well!";
+    $scoreHeader = "You scored ".$finalResult."%. Kudos! You’re doing well!";
     $scoreMessage = "You are off to a great start as far as well-being goes and we admire your effort. Learn more ways to improve on your health choices because healthy choices promote better living.";
     $gif = "https://cdn.dribbble.com/users/1341046/screenshots/14019996/media/83e7d4b66d9a5d888636b19bfd79abbb.gif";
   
     } elseif(isset($finalResult) && $finalResult >= '30') {
-    $scoreHeader = "Your Score is ".$finalResult."%! Could be better!";
+    $scoreHeader = "You scored ".$finalResult."%. Could be better!";
     $scoreMessage = "Practice more ways to ensure healthy living. Take the standard set of wholesome meals. Get just the right amount of rest and exercise. Be more deliberate about your lifestyle choices so you can live much healthier.";
     $gif = "https://cdn.dribbble.com/users/2422127/screenshots/6609950/ezgif.com-resize__5_.gif";
   
     } elseif(isset($finalResult) && $finalResult < '30') {
-    $scoreHeader = "Your Score is ".$finalResult."%! You can still make it!";
+    $scoreHeader = "You scored ".$finalResult."%. You can still make it!";
     $scoreMessage = "Did you know that your everyday choices determine and influence your health? 
     You can improve and sustain general wellness by starting with these tips. We encourage you to get that meal plan, choose achievable cardio routines, get enough sleep or find a healthy lifestyle that best suits you. Remember to start small.";
     $gif = "https://cdn.dribbble.com/users/933425/screenshots/6475835/comp_2.gif";
@@ -161,15 +161,23 @@ if(isset($_GET['code']))
         <div class="left-col_wrapper">
           <h3 class="left-col_h3 animate__animated animate__lightSpeedInLeft">Your Quiz Results!</h3>
                <h2 class="left-col_h2 animate__animated animate__lightSpeedInLeft"><?php echo $scoreHeader  ?></h2>
-               <p class="left-col_p animate__animated animate__lightSpeedInLeft"><?php echo $scoreMessage  ?></p>
+
+               <div style="margin-right: 2px;">
+               <p class="left-col_p animate__animated animate__lightSpeedInLeft"><?php echo $scoreMessage  ?>
+               <a class="social-icontext" target="_blank" href="https://web.facebook.com/acaciahealthinsurance"><img style="filter: initial;" src="images/facebook-brands.svg" alt="" width="25"></a>
+               <a class="social-icontext" target="_blank" href="https://www.instagram.com/acaciahealthinsurance/"><img style="filter: initial;" src="images/instagram-brands.svg" alt="" width="25"></a>
+               <a class="social-icontext" target="_blank" href="https://twitter.com/acaciahealth2?s=21"><img style="filter: initial;" src="images/twitter-brands.svg" alt="" width="25"></a>
+               </p>
+               </div>
+
                <h3 class="right-col_h3 animate__animated animate__lightSpeedInLeft" style="color: black; margin: 0;">Take a minute to ....</h3>
                 <p class="center-col_p animate__animated animate__lightSpeedInLeft" style="color: black;">
                   Follow our social media pages for more information on our health policies and learn more ways to improve your lifestyle and live a healthier happier life for yourself and your loved ones.
                 </p>
                 <div class="social-wrapper animate__animated animate__lightSpeedInLeft" style="margin-bottom: 20px;">
-                  <a class="social-icon" href="https://web.facebook.com/acaciahealthinsurance"><img style="filter: initial;" src="images/facebook-brands.svg" alt="" width="60"></a>
-                  <a class="social-icon" href="https://www.instagram.com/acaciahealthinsurance/"><img style="filter: initial;" src="images/instagram-brands.svg" alt="" width="60"></a>
-                  <a class="social-icon" href="https://twitter.com/acaciahealth2?s=21"><img style="filter: initial;" src="images/twitter-brands.svg" alt="" width="60"></a>
+                  <a class="social-icon" target="_blank" href="https://web.facebook.com/acaciahealthinsurance"><img style="filter: initial;" src="images/facebook-brands.svg" alt="" width="60"></a>
+                  <a class="social-icon" target="_blank" href="https://www.instagram.com/acaciahealthinsurance/"><img style="filter: initial;" src="images/instagram-brands.svg" alt="" width="60"></a>
+                  <a class="social-icon" target="_blank" href="https://twitter.com/acaciahealth2?s=21"><img style="filter: initial;" src="images/twitter-brands.svg" alt="" width="60"></a>
                 </div>
                <img class="gif-img animate__animated animate__lightSpeedInLeft" src="<?php echo $gif  ?>" alt="" width="450">
               </div>
@@ -196,7 +204,7 @@ if(isset($_GET['code']))
                      <input type="email" id="email" name="email" placeholder="Enter your email">
                     <input type="submit" id="submit" name="submit" value="Send results">
                 </form>
-                <p class="c-ryt"> <span style="color:#fff; font-weight: 500;">Disclaimer :</span> The results of this quiz is not medical proof of your health status but merely to give you a sense of how healthy your lifestyle is. You should make it a point to visit a medical centre regularly for a proper health check.</p>
+                <p class="c-ryt"> <span style="color:#fff; font-weight: 500;">Disclaimer :</span> The results of this quiz is not a medical proof of your health status but merely to give you a sense of how healthy your lifestyle is. Make it a point to visit a medical centre regularly for a proper health check.</p>
            </div>
        </div>
        <div class="exit-intent-popup">

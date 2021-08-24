@@ -35,9 +35,8 @@
       </div>
        <div class="inner-wrapper">
            <div class="left-col_wrapper animate__animated animate__lightSpeedInLeft">
-               <h2 class="left-col_h2">A good and healthy lifestyle begins with healthy choices and the decisions you make influence your general wellness.</h2>
-               <p class="left-col_p">It is also said that you are what you eat but that goes beyond just eating. What you do and even how you do things can affect your health as well. For example, the way you bend or sit can impact your wellbeing.</p>
-               <p class="left-col_p">At Acacia Health Insurance, our aim is to be a key partner in your quest for health and wellness.</p>
+               <h2 class="left-col_h2">A healthy lifestyle is the start of a healthy life.</h2>
+               <p class="left-col_p">Building a healthy life requires adapting healthy habits. Studies suggest that minor everyday habits can have great consequences on a person’s general health.</p>
                <p class="left-col_p">Take the quiz to find out how healthy your lifestyle is. Let’s go!</p>
                <a class="left-col_a" href="Quiz/">Take the quiz</a>
            </div>

@@ -279,7 +279,15 @@ input[type="submit"]:hover{
 .social-icon{
   padding: 0 20px;
 }
+.social-icontext{
+  padding: 0 3px;
+}
 .social-icon:hover{
+  animation: heartBeat;
+  animation-duration: 2s;
+  opacity: .8;
+}
+.social-icontext:hover{
   animation: heartBeat;
   animation-duration: 2s;
   opacity: .8;
@@ -287,7 +295,13 @@ input[type="submit"]:hover{
 .social-icon:first-of-type{
   padding-left: 0;
 }
+.social-icontext:first-of-type{
+  padding-left: 0;
+}
 .social-icon img {
+  filter: invert(1);
+}
+.social-icontext img {
   filter: invert(1);
 }
 .web-mess{
@@ -353,6 +367,9 @@ input[type="submit"]:hover{
   max-width: 100%;
 }
 .social-icon img {
+  width: 40px;
+}
+.social-icontext img {
   width: 40px;
 }
 .center-col_p {
@@ -423,6 +440,9 @@ margin-top: 40px;
   max-width: 100%;
 }
 .social-icon img {
+width: 40px;
+}
+.social-icontext img {
 width: 40px;
 }
 .center-col_p {
