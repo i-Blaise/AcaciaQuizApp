@@ -163,13 +163,13 @@ if(isset($_GET['code']))
 
                <div style="margin-right: 2px;">
                <p class="left-col_p animate__animated animate__lightSpeedInLeft"><?php echo $scoreMessage  ?>
-               <!-- <a class="social-icontext" target="_blank" href="https://web.facebook.com/acaciahealthinsurance"><img style="filter: initial;" src="images/facebook-brands.svg" alt="" width="25"></a>
+               <a class="social-icontext" target="_blank" href="https://web.facebook.com/acaciahealthinsurance"><img style="filter: initial;" src="images/facebook-brands.svg" alt="" width="25"></a>
                <a class="social-icontext" target="_blank" href="https://www.instagram.com/acaciahealthinsurance/"><img style="filter: initial;" src="images/instagram-brands.svg" alt="" width="25"></a>
-               <a class="social-icontext" target="_blank" href="https://twitter.com/acaciahealth2?s=21"><img style="filter: initial;" src="images/twitter-brands.svg" alt="" width="25"></a> -->
+               <a class="social-icontext" target="_blank" href="https://twitter.com/acaciahealth2?s=21"><img style="filter: initial;" src="images/twitter-brands.svg" alt="" width="25"></a>
                </p>
                </div>
 
-               <h3 class="right-col_h3 animate__animated animate__lightSpeedInLeft" style="color: black; margin: 0;">Take a minute to ....</h3>
+               <!-- <h3 class="right-col_h3 animate__animated animate__lightSpeedInLeft" style="color: black; margin: 0;">Take a minute to ....</h3>
                 <p class="center-col_p animate__animated animate__lightSpeedInLeft" style="color: black;">
                   Follow our social media pages for more information on our health policies and learn more ways to improve your lifestyle and live a healthier happier life for yourself and your loved ones.
                 </p>
@@ -177,7 +177,7 @@ if(isset($_GET['code']))
                   <a class="social-icon" target="_blank" href="https://web.facebook.com/acaciahealthinsurance"><img style="filter: initial;" src="images/facebook-brands.svg" alt="" width="60"></a>
                   <a class="social-icon" target="_blank" href="https://www.instagram.com/acaciahealthinsurance/"><img style="filter: initial;" src="images/instagram-brands.svg" alt="" width="60"></a>
                   <a class="social-icon" target="_blank" href="https://twitter.com/acaciahealth2?s=21"><img style="filter: initial;" src="images/twitter-brands.svg" alt="" width="60"></a>
-                </div>
+                </div> -->
                <img class="gif-img animate__animated animate__lightSpeedInLeft" src="<?php echo $gif  ?>" alt="" width="450">
               </div>
               <div class="right-col_wrapper animate__animated animate__slideInRight">
