@@ -24,24 +24,23 @@ if(isset($_GET['code']))
   }
 
   if(isset($finalResult) && $finalResult >= '70') {
-    $scoreHeader = "You scored ".$finalResult."%. Wow! You’re one healthy champ!";
+    $scoreHeader = "You scored ".$finalResult."% Wow! You’re one healthy champ.";
     $scoreMessage = "You’re very intentional about your habits and your great results could mean you’re in good health. We admire your dedication to health and wellness. Keep it up! Follow our social media pages for more health and wellness tips.";
     $gif = "images/account-created.gif";
   
     }elseif(isset($finalResult) && $finalResult >= '50') {
-    $scoreHeader = "You scored ".$finalResult."%. Kudos! You’re doing well!";
-    $scoreMessage = "You are off to a great start as far as well-being goes and we admire your effort. Learn more ways to improve on your health choices because healthy choices promote better living.";
+    $scoreHeader = "You scored ".$finalResult."% Kudos! You’re doing well!";
+    $scoreMessage = "You are off to a great start and we admire your effort. Learn more ways to improve your habits because a healthy lifestyle promotes a healthy life. Follow our social media pages for more health and wellness tips. ";
     $gif = "https://cdn.dribbble.com/users/1341046/screenshots/14019996/media/83e7d4b66d9a5d888636b19bfd79abbb.gif";
   
     } elseif(isset($finalResult) && $finalResult >= '30') {
-    $scoreHeader = "You scored ".$finalResult."%. Could be better!";
-    $scoreMessage = "Practice more ways to ensure healthy living. Take the standard set of wholesome meals. Get just the right amount of rest and exercise. Be more deliberate about your lifestyle choices so you can live much healthier.";
+    $scoreHeader = "You scored ".$finalResult."% Could be better!";
+    $scoreMessage = "Practice more ways to ensure healthy living. Be more intentional about your lifestyle choices so you can live much healthier. Follow our social media pages for more health and wellness tips.";
     $gif = "https://cdn.dribbble.com/users/2422127/screenshots/6609950/ezgif.com-resize__5_.gif";
   
     } elseif(isset($finalResult) && $finalResult < '30') {
-    $scoreHeader = "You scored ".$finalResult."%. You can still make it!";
-    $scoreMessage = "Did you know that your everyday choices determine and influence your health? 
-    You can improve and sustain general wellness by starting with these tips. We encourage you to get that meal plan, choose achievable cardio routines, get enough sleep or find a healthy lifestyle that best suits you. Remember to start small.";
+    $scoreHeader = "You scored ".$finalResult."% You can still make it!";
+    $scoreMessage = "Did you know that your everyday habits go a long way to affect your overall health? You can improve and sustain general wellness by adapting a healthy lifestyle that suits you. Follow our social media pages for more health and wellness tips. You can do this! ";
     $gif = "https://cdn.dribbble.com/users/933425/screenshots/6475835/comp_2.gif";
     }
 
@@ -159,7 +158,7 @@ if(isset($_GET['code']))
       </div>
        <div class="inner-wrapper">
         <div class="left-col_wrapper">
-          <h3 class="left-col_h3 animate__animated animate__lightSpeedInLeft">Your Quiz Results!</h3>
+          <h3 class="left-col_h3 animate__animated animate__lightSpeedInLeft">Your Quiz Results.</h3>
                <h2 class="left-col_h2 animate__animated animate__lightSpeedInLeft"><?php echo $scoreHeader  ?></h2>
 
                <div style="margin-right: 2px;">
