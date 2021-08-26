@@ -159,7 +159,7 @@ if(isset($_GET['code']))
       </div>
        <div class="inner-wrapper">
         <div class="left-col_wrapper">
-          <h3 class="left-col_h3 animate__animated animate__lightSpeedInLeft">Your Quiz Results!</h3>
+          <h3 class="left-col_h3 animate__animated animate__lightSpeedInLeft">Your Quiz Results</h3>
                <h2 class="left-col_h2 animate__animated animate__lightSpeedInLeft"><?php echo $scoreHeader  ?></h2>
 
                <div style="margin-right: 2px;">

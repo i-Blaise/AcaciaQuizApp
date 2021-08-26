@@ -37,7 +37,7 @@
            <div class="left-col_wrapper animate__animated animate__lightSpeedInLeft">
                <h2 class="left-col_h2">A healthy lifestyle is the start of a healthy life.</h2>
                <p class="left-col_p">Building a healthy life requires adapting healthy habits. Studies suggest that minor everyday habits can have great consequences on a person’s general health.</p>
-               <p class="left-col_p">Here is a quick test to find out how healthy your lifestyle. Let’s go!</p>
+               <p class="left-col_p">Here is a quick test to find out how healthy your lifestyle is. Let’s go!</p>
                <a class="left-col_a" href="Quiz/">Take the quiz</a>
            </div>
            <div class="right-col_wrapper">

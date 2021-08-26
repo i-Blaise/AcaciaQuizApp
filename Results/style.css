@@ -1,3 +1,9 @@
+/* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
 
 body{
     margin: 0;
@@ -203,7 +209,7 @@ outline: 1px solid rgb(170, 149, 167);
   text-align: left;
   border-radius: 20px;
   margin-left: 40px;
-  width: 500px;
+  width: 400px;
 }
 .right-col_h4 {
   font-size: 21px;
@@ -276,7 +282,7 @@ input[type="submit"]:hover{
 .c-ryt {
     font-size: 13px;
     color: #B993D7;
-    width: 495px;
+    max-width: 450px;
 }
 .gif-img {
   box-shadow: 1px 1px 174px rgb(0 0 0 / 19%);
@@ -315,10 +321,10 @@ input[type="submit"]:hover{
 .social-icontext img {
   filter: invert(1);
 }
-.web-mess{
+.web-mess {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: start;
   margin-bottom: 20px;
   color: #B993D7;
 }
