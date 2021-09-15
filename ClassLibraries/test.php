@@ -5,7 +5,8 @@ $testDBcon = new mainClass();
 
 
 
-$result = $testDBcon->fetchQuestionsAndOptionsNum();
+// $result = $testDBcon->checkResultEmailed('AQA453');
+$result = $testDBcon->sendResultEmail();
 // $result = $testDBcon->updateResults($unique_code, $finalResult);
 // $row = json_encode($result);
 // foreach ($result as $port) 
@@ -19,7 +20,7 @@ $result = $testDBcon->fetchQuestionsAndOptionsNum();
 // }
 echo $result;
 // $row = mysqli_fetch_array($result);
-// echo $row['question'];
+// echo $row['result_emailed'];
 // print_r($row);
 // var_dump($result);
 ?>
