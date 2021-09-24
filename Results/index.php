@@ -198,11 +198,11 @@ if(isset($_GET['code']))
                 </div>
                 </div>
                 </div>
-                <h3 class="right-col_h3">Ready to see which areas of your health to improve?</h3>
+                <!-- <h3 class="right-col_h3">Ready to see which areas of your health to improve?</h3>
                 <form id="results-form" method="POST" action="">
                      <input type="email" id="email" name="email" placeholder="Enter your email">
                     <input type="submit" id="submit" name="submit" value="Send results">
-                </form>
+                </form> -->
                 <p class="c-ryt"> <span style="color:#fff; font-weight: 500;">Disclaimer :</span> The results of this quiz is not a medical proof of your health status but merely to give you a sense of how healthy your lifestyle is. Make it a point to visit a medical centre regularly for a proper health check.</p>
            </div>
        </div>
