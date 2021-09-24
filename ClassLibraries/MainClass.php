@@ -1,8 +1,12 @@
 <?php
 
 require_once('DatabaseCon.php');
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+// use PHPMailer\PHPMailer\PHPMailer;
+// use PHPMailer\PHPMailer\SMTP;
+// use PHPMailer\PHPMailer\Exception;
+// require_once '../vendor/autoload.php';
+    use PHPMailer\PHPMailer\PHPMailer;
+    require_once('../vendor/autoload.php');
 
 class mainClass extends DataBase{
 
@@ -167,6 +171,38 @@ class mainClass extends DataBase{
             }
     }
 
+    function updateDBOnResultsEmailed($unique_code)
+    {
+        $myQuery = "UPDATE quizz_answers
+        SET result_emailed = 1
+        WHERE unique_code = '$unique_code';";
+        $result = mysqli_query($this->dbh, $myQuery);
+        if(!$result){
+            return "Error: " .mysqli_error($this->dbh);
+            }else{
+            return "good";
+            }
+    }
+
+    function checkResultEmailed($unique_code)
+    {
+        $myQuery = "SELECT * FROM quizz_answers WHERE unique_code = '$unique_code'";
+        $result = mysqli_query($this->dbh, $myQuery);
+        $row = mysqli_fetch_array($result);            
+        // echo 'here';
+        // die();
+        if($row['result_emailed'] != 1)
+        {
+            $sendResultEmail = $this->sendResultEmail();
+            if($sendResultEmail == 'sent') 
+            {
+                $dbUpdate = $this->updateDBOnResultsEmailed($unique_code);
+                echo $dbUpdate;
+            }
+        }else{
+            echo 'email sent';
+        }
+    }
 
 
 
@@ -414,5 +450,67 @@ class mainClass extends DataBase{
         }
     }
 
+
+
+
+    function sendResultEmail()
+    {
+  
+  
+    //PHPMailer Object
+    // $mail = new PHPMailer(true); //Argument true in constructor enables exceptions
+    
+
+    // $mail->isSMTP();
+    // $mail->SMTPDebug = 2;
+    // $mail->Host = 'smtp.hostinger.com';
+    // $mail->Port = 465;
+    // $mail->SMTPAuth = true;
+    // $mail->Username = 'acaciaquizz@sonzie.online';
+    // $mail->Password = 'Mennia123';
+
+    $mail = new PHPMailer;
+    $mail->isSMTP();
+    $mail->SMTPDebug = 2;
+    $mail->Host = 'smtp.hostinger.com';
+    $mail->Port = 587;
+    $mail->SMTPAuth = true;
+    $mail->Username = 'acaciaquizz@sonzie.online';
+    $mail->Password = 'Mennia123';
+    $mail->setFrom('acaciaquizz@sonzie.online', 'Your Name');
+    $mail->addReplyTo('acaciaquizz@sonzie.online', 'Your Name');
+
+    
+    
+    //From email address and name
+    // $mail->From = "acaciaquizz@sonzie.online";
+    // $mail->setFrom('test@hostinger-tutorials.com', 'Your Name');
+    // $mail->FromName = "Acacia Health Quizz";
+    
+    //To address and name
+    $mail->addAddress('menniablaise@gmail.com', 'Receiver Name');
+    // $mail->addAddress("menniablaise@hotmail.com");
+    
+    //Address to which recipient will reply
+    // $mail->addReplyTo("menniablaise@yahoo.com", "Reply");
+    
+    //CC and BCC
+    // $mail->addCC("cc@example.com");
+    // $mail->addBCC("bcc@example.com");
+    
+    //Send HTML or Plain Text email
+    $mail->isHTML(true);
+    
+    $mail->Subject = "Living Healthy with Acacia";
+    // $mail->Body = '<h2> '.$scoreHeader.'<h2> <br> <br> <p>'.$scoreMessage.'</p>';
+    $mail->Body = 'hi';
+    // $mail->AltBody = "This is the plain text version of the email content";
+        if($mail->send())
+        {
+            return 'sent';
+        }else{
+            echo "Mailer Error: " . $mail->ErrorInfo;
+        }
+    }
 
 }

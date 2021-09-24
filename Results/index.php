@@ -15,12 +15,22 @@ if(isset($_GET['code']))
       $finalResult = round($rawResult, 0);
       // $finalResult = 27;
       
+  
   $resultUpdate = $mainPlug->updateResults($unique_code, $finalResult);
   if($resultUpdate != 'good')
   {
     echo 'oopsss';
     // print_r($resultUpdate);
     die();
+  }else{
+
+    // Send Results Email to Acacia admins
+    $emailResults = $mainPlug->checkResultEmailed($unique_code);
+    if ($emailResults == 'good' || $emailResults == 'email sent'){
+      $resultEmailed = true;
+    }else{
+      $resultEmailed = false;
+    }
   }
 
   if(isset($finalResult) && $finalResult >= '70') {
@@ -90,7 +100,7 @@ if(isset($_GET['code']))
       $email = $_POST['email'];
 
       $emailResult = "not ready";
-      // $emailResult = $mainPlug->sendEmail($email, $scoreHeader, $scoreMessage);
+      $emailResult = $mainPlug->sendEmail($email, $scoreHeader, $scoreMessage);
       if($emailResult == 'sent')
       {
         ?>
@@ -162,10 +172,10 @@ if(isset($_GET['code']))
                <h2 class="left-col_h2 animate__animated animate__lightSpeedInLeft"><?php echo $scoreHeader  ?></h2>
 
                <div style="margin-right: 2px;">
-               <p class="left-col_p animate__animated animate__lightSpeedInLeft"><?php echo $scoreMessage  ?>
-               <a class="social-icontext" target="_blank" href="https://web.facebook.com/acaciahealthinsurance"><img style="filter: initial;" src="images/facebook-brands.svg" alt="" width="25"></a>
-               <a class="social-icontext" target="_blank" href="https://www.instagram.com/acaciahealthinsurance/"><img style="filter: initial;" src="images/instagram-brands.svg" alt="" width="25"></a>
-               <a class="social-icontext" target="_blank" href="https://twitter.com/acaciahealth2?s=21"><img style="filter: initial;" src="images/twitter-brands.svg" alt="" width="25"></a>
+               <p class="left-col_p animate__animated animate__lightSpeedInLeft"><?php echo $scoreMessage  ?> <br>
+               <a class="social-icontext" target="_blank" href="https://web.facebook.com/acaciahealthinsurance"><img style="filter: initial;" src="images/facebook-brands.svg" alt="" width="50"></a>
+               <a class="social-icontext" target="_blank" href="https://www.instagram.com/acaciahealthinsurance/"><img style="filter: initial;" src="images/instagram-brands.svg" alt="" width="50"></a>
+               <a class="social-icontext" target="_blank" href="https://twitter.com/acaciahealth2?s=21"><img style="filter: initial;" src="images/twitter-brands.svg" alt="" width="50"></a>
                </p>
                </div>
 
