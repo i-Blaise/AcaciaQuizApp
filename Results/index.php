@@ -22,16 +22,17 @@ if(isset($_GET['code']))
     echo 'oopsss';
     // print_r($resultUpdate);
     die();
-  }else{
-
-    // Send Results Email to Acacia admins
-    $emailResults = $mainPlug->checkResultEmailed($unique_code);
-    if ($emailResults == 'good' || $emailResults == 'email sent'){
-      $resultEmailed = true;
-    }else{
-      $resultEmailed = false;
-    }
   }
+  // }else{
+
+  //   // Send Results Email to Acacia admins
+  //   $emailResults = $mainPlug->checkResultEmailed($unique_code);
+  //   if ($emailResults == 'good' || $emailResults == 'email sent'){
+  //     $resultEmailed = true;
+  //   }else{
+  //     $resultEmailed = false;
+  //   }
+  // }
 
   if(isset($finalResult) && $finalResult >= '70') {
     $scoreHeader = "You scored ".$finalResult."% Wow! You’re one healthy champ.";
